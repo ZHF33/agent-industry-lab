@@ -1,0 +1,53 @@
+{
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "nodes": [
+    {
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "name": "Manual Trigger",
+      "parameters": {},
+      "position": [
+        0,
+        0
+      ],
+      "id": "manual"
+    },
+    {
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "name": "Review Skill",
+      "parameters": {
+        "options": {
+          "timeout": 10000
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "method": "POST",
+        "jsonBody": "{\"job_id\":\"bakery-demo-001\",\"product\":{\"name\":\"Beef ciabatta\",\"facts\":{\"ingredients\":\"beef, wheat\",\"storage\":\"refrigerate\"}},\"claims\":[],\"copy\":\"Beef ciabatta\",\"max_chars\":100}",
+        "url": "http://host.docker.internal:8091/reviews"
+      },
+      "position": [
+        240,
+        0
+      ],
+      "id": "review"
+    }
+  ],
+  "active": false,
+  "name": "Bakery Review Skill - Manual Demo",
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "type": "main",
+            "node": "Review Skill"
+          }
+        ]
+      ]
+    }
+  }
+}
