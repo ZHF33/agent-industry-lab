@@ -31,3 +31,9 @@ Daily work finishes a runnable increment and continues unfinished integrations b
 Next: real n8n execution, Dify knowledge integration, then real-model verification of the travel-document triage prototype. No real customer records or credentials are included.
 
 [Architecture](docs/architecture.md) · [Verification](docs/verification.md) · [JOJO](https://github.com/ZHF33)
+
+## License and policies
+
+Original repository code and documentation are available under [MIT](LICENSE). External dependencies, model weights and service terms retain their own licenses; MIT does not grant rights to third-party trademarks or private data.
+
+[Contributing](CONTRIBUTING.md) · [Security policy](SECURITY.md)
