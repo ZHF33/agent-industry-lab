@@ -4,7 +4,7 @@
 
 Operator request → n8n webhook → Agent API → Dify workflow → content/review package → human approval → local operation archive and SQLite records.
 
-Existing project includes content requests, revision routing, image selection, approval endpoints and local acceptance scripts. Demonstrated local workflow; publication records/mock publishing must not be represented as real social-platform publication. This series documents the work; legacy source has not been copied wholesale.
+Existing project includes content requests, revision routing, image selection, approval endpoints and local acceptance scripts. Demonstrated local workflow; publication records/mock publishing must not be represented as real social-platform publication. A runnable lean edition is available in [examples/bakery-agent](../examples/bakery-agent/README.md), with synthetic knowledge and no private runtime data. Actual n8n/Dify platform integration remains unverified.
 
 ## Agentic-VSDR
 
