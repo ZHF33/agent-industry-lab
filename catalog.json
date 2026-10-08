@@ -1,9 +1,34 @@
 {
   "series": "Agent Industry Lab",
   "cases": [
-    {"id":"bakery-ai-operations","kind":"agent-workflow","status":"historical-local-demo","page":"docs/existing-agents.md#bakery-ai-operations"},
-    {"id":"agentic-vsdr","kind":"research-agent","status":"simulation-verified","page":"docs/existing-agents.md#agentic-vsdr"},
-    {"id":"bakery-review","kind":"skill","status":"local-api-verified","page":"examples/bakery-review/README.md","model_verified":false,"n8n_verified":false,"dify_verified":false},
-    {"id":"travel-triage","kind":"agent","status":"planned","model_verified":false}
+    {
+      "id": "bakery-ai-operations",
+      "kind": "agent-workflow",
+      "status": "source-released-local-verified",
+      "page": "examples/bakery-agent/README.md",
+      "n8n_verified": false,
+      "dify_verified": false
+    },
+    {
+      "id": "agentic-vsdr",
+      "kind": "research-agent",
+      "status": "simulation-verified",
+      "page": "docs/existing-agents.md#agentic-vsdr"
+    },
+    {
+      "id": "bakery-review",
+      "kind": "skill",
+      "status": "local-api-verified",
+      "page": "examples/bakery-review/README.md",
+      "model_verified": false,
+      "n8n_verified": false,
+      "dify_verified": false
+    },
+    {
+      "id": "travel-triage",
+      "kind": "agent",
+      "status": "planned",
+      "model_verified": false
+    }
   ]
 }
