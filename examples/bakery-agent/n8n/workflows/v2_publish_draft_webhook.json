@@ -1,0 +1,116 @@
+{
+  "id": "v2PublishDraftWebhook",
+  "name": "V2 Publish Draft Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bakery-publish-draft",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "publish-draft-webhook",
+      "name": "PublishDraftWebhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $json || {};\nconst body = raw.body && typeof raw.body === 'object' ? raw.body : {};\nconst query = raw.query && typeof raw.query === 'object' ? raw.query : {};\nconst headers = raw.headers && typeof raw.headers === 'object' ? raw.headers : {};\nconst incoming = { ...raw, ...query, ...body };\nconst webhookSecret = $env.N8N_WEBHOOK_SECRET || '';\nif (!webhookSecret) throw new Error('N8N_WEBHOOK_SECRET is required.');\nconst receivedSecret = incoming.webhook_secret || headers['x-bakery-webhook-secret'] || headers['X-Bakery-Webhook-Secret'] || '';\nif (receivedSecret !== webhookSecret) throw new Error('Unauthorized webhook request.');\nconst packagePath = incoming.package || incoming.package_dir || incoming.package_path;\nif (!packagePath) throw new Error('package is required.');\nreturn [{ json: {\n  package: packagePath,\n  out_dir: incoming.out_dir || 'runs/publish_drafts',\n  db: incoming.db || incoming.db_path || 'data/agent_ops.sqlite3',\n  no_sync_db: Boolean(incoming.no_sync_db)\n} }];"
+      },
+      "id": "publish-draft-input",
+      "name": "Publish Draft Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{($env.AGENT_API_URL || 'http://agent-api:8765') + '/publish/draft'}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{$env.AGENT_API_TOKEN ? ('Bearer ' + $env.AGENT_API_TOKEN) : ''}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{$json}}",
+        "options": {
+          "timeout": 360000
+        }
+      },
+      "id": "call-publish-draft-api",
+      "name": "Call Publish Draft API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { ok: Boolean($json.ok), channel: 'publish-draft-response', publish_draft: $json.publish_draft || {} } }];"
+      },
+      "id": "publish-draft-response",
+      "name": "Publish Draft Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "PublishDraftWebhook": {
+      "main": [
+        [
+          {
+            "node": "Publish Draft Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Publish Draft Input": {
+      "main": [
+        [
+          {
+            "node": "Call Publish Draft API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Publish Draft API": {
+      "main": [
+        [
+          {
+            "node": "Publish Draft Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}

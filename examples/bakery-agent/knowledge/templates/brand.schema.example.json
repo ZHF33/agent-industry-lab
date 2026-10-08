@@ -1,0 +1,16 @@
+{
+  "id": "brand_local_bakery",
+  "type": "brand",
+  "name": "本地面包店",
+  "tags": ["新鲜", "手作", "社区门店"],
+  "source_file": "knowledge/raw/brand.md",
+  "confidence": "medium",
+  "fields": {
+    "positioning": "社区型精品面包店",
+    "tone": "真实、温暖、克制、有食欲",
+    "proof_points": ["每日现烤", "人工审核内容", "以门店实际供应为准"],
+    "forbidden_claims": ["夸大功效", "虚构销量", "未经确认的产地"],
+    "notes": "品牌语气优先真实，不做强刺激营销。"
+  },
+  "todo": ["补充门店地址", "补充品牌故事"]
+}

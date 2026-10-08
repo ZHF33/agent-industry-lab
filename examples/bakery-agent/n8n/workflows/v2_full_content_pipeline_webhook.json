@@ -1,0 +1,116 @@
+{
+  "id": "v2FullContentPipelineWebhook",
+  "name": "V2 Full Content Pipeline Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bakery-full-pipeline",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "full-pipeline-webhook",
+      "name": "FullPipelineWebhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $json || {};\nconst body = raw.body && typeof raw.body === 'object' ? raw.body : {};\nconst query = raw.query && typeof raw.query === 'object' ? raw.query : {};\nconst headers = raw.headers && typeof raw.headers === 'object' ? raw.headers : {};\nconst incoming = { ...raw, ...query, ...body };\nconst webhookSecret = $env.N8N_WEBHOOK_SECRET || '';\nif (!webhookSecret) throw new Error('N8N_WEBHOOK_SECRET is required.');\nconst receivedSecret = incoming.webhook_secret || headers['x-bakery-webhook-secret'] || headers['X-Bakery-Webhook-Secret'] || '';\nif (receivedSecret !== webhookSecret) throw new Error('Unauthorized webhook request.');\nconst userRequest = String(incoming.user_request || incoming.request || incoming.natural_request || '').trim();\nif (!userRequest) throw new Error('user_request is required.');\nconst imageCount = Number(incoming.image_count || 3);\nif (!Number.isInteger(imageCount) || imageCount < 1 || imageCount > 8) throw new Error('image_count must be an integer between 1 and 8.');\nconst autoApprove = Boolean(incoming.auto_approve);\nreturn [{ json: {\n  user_request: userRequest,\n  execution_mode: incoming.execution_mode || incoming.mode || 'dry-run',\n  platforms: incoming.platforms || incoming.platform || 'xiaohongshu,douyin',\n  image_count: imageCount,\n  preferred_image_id: incoming.preferred_image_id || 'deconstructed',\n  local_demo: incoming.local_demo !== undefined ? Boolean(incoming.local_demo) : true,\n  live_image: Boolean(incoming.live_image || incoming.live),\n  mock_publish: incoming.mock_publish !== undefined ? Boolean(incoming.mock_publish) : false,\n  approval_mode: incoming.approval_mode || (autoApprove ? 'auto' : 'manual'),\n  auto_approve: autoApprove,\n  approval_note: incoming.approval_note || (autoApprove ? 'Pipeline auto-approved because auto_approve=true was explicitly requested.' : ''),\n  image_note: incoming.image_note || 'Pipeline selected preferred image variant.',\n  db: incoming.db || incoming.db_path || 'data/agent_ops.sqlite3',\n  out_dir: incoming.out_dir || 'runs/operations',\n  approval_out_dir: incoming.approval_out_dir || 'runs/approval_queue',\n  image_out_dir: incoming.image_out_dir || 'runs/generated_images',\n  archive_out_dir: incoming.archive_out_dir || 'runs/operation_archive',\n  publish_out_dir: incoming.publish_out_dir || 'runs/publish_drafts',\n  log: incoming.log || 'runs/operation_log.jsonl',\n  env_file: incoming.env_file || '.env'\n} }];"
+      },
+      "id": "full-pipeline-input",
+      "name": "Full Pipeline Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{($env.AGENT_API_URL || 'http://agent-api:8765') + '/pipeline'}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{$env.AGENT_API_TOKEN ? ('Bearer ' + $env.AGENT_API_TOKEN) : ''}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{$json}}",
+        "options": {
+          "timeout": 360000
+        }
+      },
+      "id": "call-full-pipeline-api",
+      "name": "Call Full Pipeline API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { ok: Boolean($json.ok), channel: 'full-pipeline-response', pipeline: $json } }];"
+      },
+      "id": "full-pipeline-response",
+      "name": "Full Pipeline Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "FullPipelineWebhook": {
+      "main": [
+        [
+          {
+            "node": "Full Pipeline Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Full Pipeline Input": {
+      "main": [
+        [
+          {
+            "node": "Call Full Pipeline API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Full Pipeline API": {
+      "main": [
+        [
+          {
+            "node": "Full Pipeline Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}

@@ -1,0 +1,41 @@
+models:
+  planner:
+    provider: openai
+    model_env: OPENAI_MODEL
+    default_model: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+  copywriter:
+    provider: openai
+    model_env: OPENAI_MODEL
+    default_model: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+  prompt_generator:
+    provider: openai
+    model_env: OPENAI_MODEL
+    default_model: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+  compliance_reviewer:
+    provider: openai
+    model_env: OPENAI_MODEL
+    default_model: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+
+reserved_future_models:
+  anthropic_review:
+    provider: anthropic
+    model: ""
+    api_key_env: ANTHROPIC_API_KEY
+    enabled_in_stage_1_2: false
+  image_generation:
+    provider: openai_or_external_image_api
+    model: ""
+    api_key_env: OPENAI_API_KEY
+    enabled_in_stage_1_2: false
+  async_video:
+    provider: seedance_or_kling
+    model: ""
+    api_key_env:
+      - SEEDANCE_API_KEY
+      - KLING_API_KEY
+    enabled_in_stage_1_2: false
+

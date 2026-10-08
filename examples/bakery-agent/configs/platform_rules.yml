@@ -1,0 +1,21 @@
+platforms:
+  xiaohongshu:
+    tone: natural, useful, visually specific
+    avoid:
+      - absolute medical claims
+      - fake scarcity
+      - unverified origin claims
+    output:
+      title_count: 5
+      hashtags_max: 8
+  douyin:
+    tone: fast hook, scene-driven, spoken Chinese
+    avoid:
+      - unsafe food claims
+      - price deception
+      - auto-publish without approval
+    output:
+      duration_seconds: 30
+      shot_count: 6
+  approval:
+    human_required_before_publish: true

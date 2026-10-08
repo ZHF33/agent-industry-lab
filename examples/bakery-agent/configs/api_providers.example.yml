@@ -1,0 +1,27 @@
+providers:
+  openai:
+    base_url_env: OPENAI_BASE_URL
+    api_key_env: OPENAI_API_KEY
+    timeout_seconds_env: OPENAI_TIMEOUT_SECONDS
+    stage_1_2_default: true
+    text_model_env: OPENAI_MODEL
+    image_model_env: OPENAI_IMAGE_MODEL
+    image_size_env: OPENAI_IMAGE_SIZE
+    image_quality_env: OPENAI_IMAGE_QUALITY
+  anthropic:
+    base_url: https://api.anthropic.com
+    api_key_env: ANTHROPIC_API_KEY
+    stage_1_2_default: false
+  seedance:
+    base_url: ""
+    api_key_env: SEEDANCE_API_KEY
+    async_video: true
+  kling:
+    base_url: ""
+    api_key_env: KLING_API_KEY
+    async_video: true
+  dify:
+    base_url_env: DIFY_BASE_URL
+    api_key_env: DIFY_API_KEY
+  n8n:
+    base_url_env: N8N_BASE_URL

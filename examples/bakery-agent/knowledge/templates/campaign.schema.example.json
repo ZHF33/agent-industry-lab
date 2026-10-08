@@ -1,0 +1,23 @@
+{
+  "id": "campaign_breakfast_toast_2026_06",
+  "type": "campaign",
+  "name": "早餐吐司推广",
+  "tags": ["早餐", "吐司", "复购"],
+  "source_file": "knowledge/raw/campaign_breakfast_toast.md",
+  "confidence": "medium",
+  "fields": {
+    "goal": "提升早餐场景到店转化",
+    "products": ["北海道吐司"],
+    "platforms": ["小红书", "抖音"],
+    "content_angles": ["新鲜出炉", "早餐搭配", "家庭分享"],
+    "metrics": {
+      "impressions": null,
+      "likes": null,
+      "comments": null,
+      "sales": null,
+      "roi": null
+    },
+    "review": "待活动结束后复盘。"
+  },
+  "todo": ["活动后补充真实平台数据和销量"]
+}

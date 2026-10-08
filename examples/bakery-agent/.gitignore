@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.pytest_tmp*/
+runs/*
+!runs/.gitkeep
+runs/pytest_tmp*/
+data/*
+!data/.gitkeep
+data/generated_images_runtime/
+knowledge/processed/*
+!knowledge/processed/bakery_agent_context.md
+*.sqlite*
+*.log

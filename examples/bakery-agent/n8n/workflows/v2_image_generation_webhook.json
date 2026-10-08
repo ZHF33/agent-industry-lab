@@ -1,0 +1,116 @@
+{
+  "id": "v2ImageGenerationWebhook",
+  "name": "V2 Image Generation Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bakery-image-generate",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "image-generation-webhook",
+      "name": "ImageGenerationWebhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $json || {};\nconst body = raw.body && typeof raw.body === 'object' ? raw.body : {};\nconst query = raw.query && typeof raw.query === 'object' ? raw.query : {};\nconst headers = raw.headers && typeof raw.headers === 'object' ? raw.headers : {};\nconst incoming = { ...raw, ...query, ...body };\nconst webhookSecret = $env.N8N_WEBHOOK_SECRET || '';\nif (!webhookSecret) throw new Error('N8N_WEBHOOK_SECRET is required.');\nconst receivedSecret = incoming.webhook_secret || headers['x-bakery-webhook-secret'] || headers['X-Bakery-Webhook-Secret'] || '';\nif (receivedSecret !== webhookSecret) throw new Error('Unauthorized webhook request.');\nconst packagePath = incoming.package || incoming.package_dir || incoming.package_path;\nif (!packagePath) throw new Error('package is required.');\nconst imageCount = Number(incoming.n || 1);\nif (!Number.isInteger(imageCount) || imageCount < 1 || imageCount > 8) {\n  throw new Error('n must be an integer between 1 and 8.');\n}\nconst live = Boolean(incoming.live || incoming.live_image);\nconst localDemo = Boolean(incoming.local_demo);\nif (live && localDemo) throw new Error('live and local_demo cannot both be true.');\nreturn [{ json: {\n  package: packagePath,\n  out_dir: incoming.out_dir || 'runs/generated_images',\n  live,\n  local_demo: localDemo,\n  require_key: Boolean(incoming.require_key),\n  n: imageCount\n} }];"
+      },
+      "id": "image-generation-input",
+      "name": "Image Generation Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{($env.AGENT_API_URL || 'http://agent-api:8765') + '/image/generate'}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{$env.AGENT_API_TOKEN ? ('Bearer ' + $env.AGENT_API_TOKEN) : ''}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{$json}}",
+        "options": {
+          "timeout": 360000
+        }
+      },
+      "id": "call-image-generation-api",
+      "name": "Call Image Generation API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { ok: Boolean($json.ok), channel: 'image-generation-response', image_generation: $json.image_generation || {} } }];"
+      },
+      "id": "image-generation-response",
+      "name": "Image Generation Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "ImageGenerationWebhook": {
+      "main": [
+        [
+          {
+            "node": "Image Generation Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Image Generation Input": {
+      "main": [
+        [
+          {
+            "node": "Call Image Generation API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Image Generation API": {
+      "main": [
+        [
+          {
+            "node": "Image Generation Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}

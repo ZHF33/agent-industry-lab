@@ -1,0 +1,116 @@
+{
+  "id": "v2ApprovalReviewWebhook",
+  "name": "V2 Approval Review Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bakery-approval-review",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "approval-review-webhook",
+      "name": "ApprovalReviewWebhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $json || {};\nconst body = raw.body && typeof raw.body === 'object' ? raw.body : {};\nconst query = raw.query && typeof raw.query === 'object' ? raw.query : {};\nconst headers = raw.headers && typeof raw.headers === 'object' ? raw.headers : {};\nconst incoming = { ...raw, ...query, ...body };\nconst webhookSecret = $env.N8N_WEBHOOK_SECRET || '';\nif (!webhookSecret) throw new Error('N8N_WEBHOOK_SECRET is required.');\nconst receivedSecret = incoming.webhook_secret || headers['x-bakery-webhook-secret'] || headers['X-Bakery-Webhook-Secret'] || '';\nif (receivedSecret !== webhookSecret) throw new Error('Unauthorized webhook request.');\nconst packagePath = incoming.package || incoming.package_dir || incoming.package_path;\nconst status = incoming.status || incoming.approval_status;\nif (!packagePath) throw new Error('package is required.');\nif (!status) throw new Error('status is required.');\nreturn [{ json: {\n  package: packagePath,\n  status,\n  note: incoming.note || incoming.reviewer_note || '',\n  create_revision: Boolean(incoming.create_revision),\n  out_dir: incoming.out_dir || 'runs/revisions'\n} }];"
+      },
+      "id": "approval-review-input",
+      "name": "Approval Review Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{($env.AGENT_API_URL || 'http://agent-api:8765') + '/approval/review'}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{$env.AGENT_API_TOKEN ? ('Bearer ' + $env.AGENT_API_TOKEN) : ''}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{$json}}",
+        "options": {
+          "timeout": 360000
+        }
+      },
+      "id": "call-approval-review-api",
+      "name": "Call Approval Review API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { ok: Boolean($json.ok), channel: 'approval-review-response', approval: $json.approval || {}, revision: $json.revision || null } }];"
+      },
+      "id": "approval-review-response",
+      "name": "Approval Review Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "ApprovalReviewWebhook": {
+      "main": [
+        [
+          {
+            "node": "Approval Review Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Approval Review Input": {
+      "main": [
+        [
+          {
+            "node": "Call Approval Review API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Approval Review API": {
+      "main": [
+        [
+          {
+            "node": "Approval Review Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}

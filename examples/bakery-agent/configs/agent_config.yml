@@ -1,0 +1,20 @@
+agent:
+  name: Bakery AI Operation Agent V2
+  domain: local bakery operations
+  language: zh-CN
+  output_policy: json_first
+  approval_required: true
+
+knowledge:
+  raw_dir: knowledge/raw
+  processed_dir: knowledge/processed
+  standard_dir: knowledge/standard
+  default_context: knowledge/processed/bakery_agent_context.md
+
+workflows:
+  main: bakery_operation_v1
+  channels:
+    - xiaohongshu_content
+    - douyin_script
+    - image_prompt
+    - compliance_review

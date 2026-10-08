@@ -3,3 +3,4 @@ uvicorn
 httpx
 pytest
 starlette<1
+PyYAML

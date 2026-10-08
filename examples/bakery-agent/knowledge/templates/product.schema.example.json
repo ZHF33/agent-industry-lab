@@ -1,0 +1,21 @@
+{
+  "id": "product_hokkaido_toast",
+  "type": "product",
+  "name": "北海道吐司",
+  "price": 39,
+  "currency": "CNY",
+  "tags": ["早餐", "奶香", "儿童", "家庭分享"],
+  "source_file": "knowledge/raw/hokkaido_toast.md",
+  "confidence": "medium",
+  "fields": {
+    "product_type": "吐司",
+    "ingredients": ["牛奶", "面粉", "黄油"],
+    "selling_points": ["奶香浓郁", "口感柔软", "适合早餐"],
+    "taste": "柔软、奶香、微甜",
+    "scenarios": ["早餐", "下午茶", "儿童加餐"],
+    "target_customers": ["家庭用户", "宝妈", "上班族"],
+    "forbidden_claims": ["治疗", "减肥", "100%无添加"],
+    "notes": "人工确认价格和配料后再用于正式发布。"
+  },
+  "todo": ["确认真实价格", "确认过敏原信息"]
+}

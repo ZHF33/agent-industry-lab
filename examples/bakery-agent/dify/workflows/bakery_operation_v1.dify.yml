@@ -1,0 +1,725 @@
+app:
+  description: Dynamic bakery AI operation workflow for local V2 execution. Import this DSL into Dify, then replace the Knowledge Context Formatter with a real bakery Knowledge Retrieval node after your dataset is ready.
+  icon: "\U0001F950"
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: Bakery AI Operation Agent V2
+  use_icon_as_answer_icon: false
+dependencies: []
+kind: app
+version: 0.3.1
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      enabled: false
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: template-transform
+      id: start-to-knowledge
+      source: start_node
+      sourceHandle: source
+      target: knowledge_context
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: template-transform
+        targetType: llm
+      id: knowledge-to-planner
+      source: knowledge_context
+      sourceHandle: source
+      target: content_planner
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: planner-to-xhs
+      source: content_planner
+      sourceHandle: source
+      target: xiaohongshu_copywriter
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: xhs-to-douyin
+      source: xiaohongshu_copywriter
+      sourceHandle: source
+      target: douyin_scriptwriter
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: douyin-to-image
+      source: douyin_scriptwriter
+      sourceHandle: source
+      target: image_prompt_generator
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: image-to-compliance
+      source: image_prompt_generator
+      sourceHandle: source
+      target: compliance_reviewer
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: compliance-to-end
+      source: compliance_reviewer
+      sourceHandle: source
+      target: end_node
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: Start
+        type: start
+        variables:
+        - label: product_query
+          max_length: 200
+          options: []
+          required: true
+          type: text-input
+          variable: product_query
+        - label: campaign_goal
+          max_length: 500
+          options: []
+          required: true
+          type: paragraph
+          variable: campaign_goal
+        - label: content_type
+          max_length: 100
+          options: []
+          required: false
+          type: text-input
+          variable: content_type
+        - label: image_type
+          max_length: 100
+          options: []
+          required: false
+          type: text-input
+          variable: image_type
+        - label: image_style
+          max_length: 300
+          options: []
+          required: false
+          type: text-input
+          variable: image_style
+        - label: platforms
+          max_length: 200
+          options: []
+          required: false
+          type: text-input
+          variable: platforms
+        - label: audience
+          max_length: 300
+          options: []
+          required: false
+          type: text-input
+          variable: audience
+        - label: constraints
+          max_length: 1000
+          options: []
+          required: false
+          type: paragraph
+          variable: constraints
+        - label: content_task_json
+          max_length: 2000
+          options: []
+          required: false
+          type: paragraph
+          variable: content_task_json
+        - label: product_knowledge
+          max_length: 5000
+          options: []
+          required: false
+          type: paragraph
+          variable: product_knowledge
+        - label: brand_context
+          max_length: 2000
+          options: []
+          required: false
+          type: paragraph
+          variable: brand_context
+        - label: platform_rules
+          max_length: 2000
+          options: []
+          required: false
+          type: paragraph
+          variable: platform_rules
+        - label: date
+          max_length: 50
+          options: []
+          required: false
+          type: text-input
+          variable: date
+      height: 220
+      id: start_node
+      position:
+        x: 30
+        y: 220
+      positionAbsolute:
+        x: 30
+        y: 220
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: Replace this node with Dify Knowledge Retrieval after importing your bakery dataset.
+        selected: false
+        template: |
+          产品查询: {{ product_query }}
+          运营目标: {{ campaign_goal }}
+          内容类型: {{ content_type }}
+          图片类型: {{ image_type }}
+          图片风格: {{ image_style }}
+          平台: {{ platforms }}
+          目标受众: {{ audience }}
+          约束: {{ constraints }}
+          内容任务 JSON:
+          {{ content_task_json }}
+          日期: {{ date }}
+
+          产品知识:
+          {{ product_knowledge }}
+
+          品牌信息:
+          {{ brand_context }}
+
+          平台规则:
+          {{ platform_rules }}
+        title: Knowledge Context Formatter
+        type: template-transform
+        variables:
+        - value_selector:
+          - start_node
+          - product_query
+          value_type: string
+          variable: product_query
+        - value_selector:
+          - start_node
+          - campaign_goal
+          value_type: string
+          variable: campaign_goal
+        - value_selector:
+          - start_node
+          - content_type
+          value_type: string
+          variable: content_type
+        - value_selector:
+          - start_node
+          - image_type
+          value_type: string
+          variable: image_type
+        - value_selector:
+          - start_node
+          - image_style
+          value_type: string
+          variable: image_style
+        - value_selector:
+          - start_node
+          - platforms
+          value_type: string
+          variable: platforms
+        - value_selector:
+          - start_node
+          - audience
+          value_type: string
+          variable: audience
+        - value_selector:
+          - start_node
+          - constraints
+          value_type: string
+          variable: constraints
+        - value_selector:
+          - start_node
+          - content_task_json
+          value_type: string
+          variable: content_task_json
+        - value_selector:
+          - start_node
+          - product_knowledge
+          value_type: string
+          variable: product_knowledge
+        - value_selector:
+          - start_node
+          - brand_context
+          value_type: string
+          variable: brand_context
+        - value_selector:
+          - start_node
+          - platform_rules
+          value_type: string
+          variable: platform_rules
+        - value_selector:
+          - start_node
+          - date
+          value_type: string
+          variable: date
+      height: 110
+      id: knowledge_context
+      position:
+        x: 330
+        y: 220
+      positionAbsolute:
+        x: 330
+        y: 220
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        memory:
+          enabled: false
+          window:
+            enabled: false
+            size: 50
+        model:
+          mode: chat
+          name: gpt-4o-mini
+          provider: openai
+        prompt_template:
+        - role: system
+          text: |
+            你是本地面包店 AI 运营策划。必须严格基于输入上下文里的内容任务、产品知识、品牌信息和平台规则生成当天内容计划。
+            关键规则:
+            - 必须围绕输入产品，不得改成其他产品、节日主题或泛泛的新品系列。
+            - 禁止编造输入中没有出现的配料、水果、折扣、库存、产地、功效、节日活动。
+            - 如果信息不足，在 risk_notes 标记，不要自行补充事实。
+            - 只输出合法 JSON，不要输出 Markdown，不要使用 ```json 代码块。
+        - role: user
+          text: |
+            输入上下文:
+            {{#knowledge_context.output#}}
+
+            输出 JSON:
+            {
+              "theme": "",
+              "target_customer": "",
+              "content_angles": [],
+              "xiaohongshu_brief": "",
+              "douyin_brief": "",
+              "visual_direction": "",
+              "risk_notes": []
+            }
+        retry_config:
+          enabled: true
+          max_retries: 1
+          retry_interval: 1000
+          exponential_backoff:
+            enabled: false
+            multiplier: 2
+            max_interval: 10000
+        selected: false
+        structured_output:
+          enabled: false
+        title: Content Planner
+        type: llm
+        vision:
+          enabled: false
+          configs:
+            variable_selector: []
+      height: 120
+      id: content_planner
+      position:
+        x: 630
+        y: 220
+      positionAbsolute:
+        x: 630
+        y: 220
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        memory:
+          enabled: false
+          window:
+            enabled: false
+            size: 50
+        model:
+          mode: chat
+          name: gpt-4o-mini
+          provider: openai
+        prompt_template:
+        - role: system
+          text: |
+            你是小红书面包店内容文案。写自然、可信、有画面感的中文笔记。
+            关键规则:
+            - 必须围绕输入产品和产品知识；如果内容计划跑偏，以产品知识为准。
+            - 禁止编造未提供的配料、水果、折扣、产地、库存、健康功效。
+            - 不要承诺自动发布，所有内容都保持待人工审核。
+            - 只输出合法 JSON，不要输出 Markdown，不要使用 ```json 代码块。
+        - role: user
+          text: |
+            产品与品牌上下文:
+            {{#knowledge_context.output#}}
+
+            内容计划:
+            {{#content_planner.text#}}
+
+            输出 JSON:
+            {
+              "titles": [],
+              "cover_text": "",
+              "body": "",
+              "hashtags": [],
+              "cta": "",
+              "compliance_notes": []
+            }
+        retry_config:
+          enabled: true
+          max_retries: 1
+          retry_interval: 1000
+          exponential_backoff:
+            enabled: false
+            multiplier: 2
+            max_interval: 10000
+        selected: false
+        structured_output:
+          enabled: false
+        title: Xiaohongshu Copywriter
+        type: llm
+        vision:
+          enabled: false
+          configs:
+            variable_selector: []
+      height: 120
+      id: xiaohongshu_copywriter
+      position:
+        x: 930
+        y: 220
+      positionAbsolute:
+        x: 930
+        y: 220
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        memory:
+          enabled: false
+          window:
+            enabled: false
+            size: 50
+        model:
+          mode: chat
+          name: gpt-4o-mini
+          provider: openai
+        prompt_template:
+        - role: system
+          text: |
+            你是抖音短视频脚本策划，输出 30 秒以内的面包店视频脚本。
+            关键规则:
+            - 必须围绕输入产品和产品知识；不得换成其他产品或节日主题。
+            - 禁止编造未提供的配料、水果、折扣、产地、库存、健康功效。
+            - 镜头设计要表现真实口感、切面、手掰、包装或到店场景。
+            - 只输出合法 JSON，不要输出 Markdown，不要使用 ```json 代码块。
+        - role: user
+          text: |
+            产品与品牌上下文:
+            {{#knowledge_context.output#}}
+
+            内容计划:
+            {{#content_planner.text#}}
+
+            小红书文案:
+            {{#xiaohongshu_copywriter.text#}}
+
+            输出 JSON:
+            {
+              "hook": "",
+              "shots": [
+                {
+                  "time": "",
+                  "visual": "",
+                  "voiceover": "",
+                  "onscreen_text": ""
+                }
+              ],
+              "cta": "",
+              "compliance_notes": []
+            }
+        retry_config:
+          enabled: true
+          max_retries: 1
+          retry_interval: 1000
+          exponential_backoff:
+            enabled: false
+            multiplier: 2
+            max_interval: 10000
+        selected: false
+        structured_output:
+          enabled: false
+        title: Douyin Scriptwriter
+        type: llm
+        vision:
+          enabled: false
+          configs:
+            variable_selector: []
+      height: 120
+      id: douyin_scriptwriter
+      position:
+        x: 1230
+        y: 220
+      positionAbsolute:
+        x: 1230
+        y: 220
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        memory:
+          enabled: false
+          window:
+            enabled: false
+            size: 50
+        model:
+          mode: chat
+          name: gpt-4o-mini
+          provider: openai
+        prompt_template:
+        - role: system
+          text: |
+            你是面包店产品摄影和 AI 生图提示词设计师，为本地面包店内容任务生成可控图片提示词。
+            关键规则:
+            - 必须围绕输入产品和产品知识；不得加入未提供的水果、节日元素、文字招牌、品牌标识。
+            - 画面应突出真实食物质感、自然光、干净背景和可审核商业用途。
+            - 只输出合法 JSON，不要输出 Markdown，不要使用 ```json 代码块。
+        - role: user
+          text: |
+            产品与品牌上下文:
+            {{#knowledge_context.output#}}
+
+            内容计划:
+            {{#content_planner.text#}}
+
+            输出 JSON:
+            {
+              "prompt_zh": "",
+              "prompt_en": "",
+              "negative_prompt": "",
+              "aspect_ratio": "",
+              "style_notes": [],
+              "safety_notes": []
+            }
+        retry_config:
+          enabled: true
+          max_retries: 1
+          retry_interval: 1000
+          exponential_backoff:
+            enabled: false
+            multiplier: 2
+            max_interval: 10000
+        selected: false
+        structured_output:
+          enabled: false
+        title: Image Prompt Generator
+        type: llm
+        vision:
+          enabled: false
+          configs:
+            variable_selector: []
+      height: 120
+      id: image_prompt_generator
+      position:
+        x: 1530
+        y: 220
+      positionAbsolute:
+        x: 1530
+        y: 220
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        memory:
+          enabled: false
+          window:
+            enabled: false
+            size: 50
+        model:
+          mode: chat
+          name: gpt-4o-mini
+          provider: openai
+        prompt_template:
+        - role: system
+          text: |
+            你是食品内容合规审核员。检查小红书文案、抖音脚本和图片提示词。
+            关键规则:
+            - 检查是否偏离输入产品或编造配料、水果、折扣、产地、库存、健康功效。
+            - Stage 1 永远不批准自动发布，只批准进入人工审核。
+            - 只输出合法 JSON，不要输出 Markdown，不要使用 ```json 代码块。
+        - role: user
+          text: |
+            产品与品牌上下文:
+            {{#knowledge_context.output#}}
+
+            小红书文案:
+            {{#xiaohongshu_copywriter.text#}}
+
+            抖音脚本:
+            {{#douyin_scriptwriter.text#}}
+
+            图片提示词:
+            {{#image_prompt_generator.text#}}
+
+            输出 JSON:
+            {
+              "approved": false,
+              "risk_level": "low|medium|high",
+              "issues": [],
+              "required_edits": [],
+              "safe_publish_summary": ""
+            }
+        retry_config:
+          enabled: true
+          max_retries: 1
+          retry_interval: 1000
+          exponential_backoff:
+            enabled: false
+            multiplier: 2
+            max_interval: 10000
+        selected: false
+        structured_output:
+          enabled: false
+        title: Compliance Reviewer
+        type: llm
+        vision:
+          enabled: false
+          configs:
+            variable_selector: []
+      height: 120
+      id: compliance_reviewer
+      position:
+        x: 1830
+        y: 220
+      positionAbsolute:
+        x: 1830
+        y: 220
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - content_planner
+          - text
+          value_type: string
+          variable: content_plan
+        - value_selector:
+          - xiaohongshu_copywriter
+          - text
+          value_type: string
+          variable: xiaohongshu_copy
+        - value_selector:
+          - douyin_scriptwriter
+          - text
+          value_type: string
+          variable: douyin_script
+        - value_selector:
+          - image_prompt_generator
+          - text
+          value_type: string
+          variable: image_prompt
+        - value_selector:
+          - compliance_reviewer
+          - text
+          value_type: string
+          variable: compliance_result
+        selected: false
+        title: End
+        type: end
+      height: 170
+      id: end_node
+      position:
+        x: 2130
+        y: 220
+      positionAbsolute:
+        x: 2130
+        y: 220
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 0
+      y: 0
+      zoom: 0.7
+

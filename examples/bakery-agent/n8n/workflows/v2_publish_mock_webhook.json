@@ -1,0 +1,116 @@
+{
+  "id": "v2PublishMockWebhook",
+  "name": "V2 Publish Mock Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bakery-publish-mock",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "publish-mock-webhook",
+      "name": "PublishMockWebhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $json || {};\nconst body = raw.body && typeof raw.body === 'object' ? raw.body : {};\nconst query = raw.query && typeof raw.query === 'object' ? raw.query : {};\nconst headers = raw.headers && typeof raw.headers === 'object' ? raw.headers : {};\nconst incoming = { ...raw, ...query, ...body };\nconst webhookSecret = $env.N8N_WEBHOOK_SECRET || '';\nif (!webhookSecret) throw new Error('N8N_WEBHOOK_SECRET is required.');\nconst receivedSecret = incoming.webhook_secret || headers['x-bakery-webhook-secret'] || headers['X-Bakery-Webhook-Secret'] || '';\nif (receivedSecret !== webhookSecret) throw new Error('Unauthorized webhook request.');\nconst packagePath = incoming.package || incoming.package_dir || incoming.package_path;\nif (!packagePath) throw new Error('package is required.');\nif (!incoming.platform) throw new Error('platform is required.');\nreturn [{ json: {\n  package: packagePath,\n  platform: incoming.platform,\n  db: incoming.db || incoming.db_path || 'data/agent_ops.sqlite3',\n  no_sync_db: Boolean(incoming.no_sync_db)\n} }];"
+      },
+      "id": "publish-mock-input",
+      "name": "Publish Mock Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{($env.AGENT_API_URL || 'http://agent-api:8765') + '/publish/mock'}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{$env.AGENT_API_TOKEN ? ('Bearer ' + $env.AGENT_API_TOKEN) : ''}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{$json}}",
+        "options": {
+          "timeout": 360000
+        }
+      },
+      "id": "call-publish-mock-api",
+      "name": "Call Publish Mock API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { ok: Boolean($json.ok), channel: 'publish-mock-response', mock_publish: $json.mock_publish || {} } }];"
+      },
+      "id": "publish-mock-response",
+      "name": "Publish Mock Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "PublishMockWebhook": {
+      "main": [
+        [
+          {
+            "node": "Publish Mock Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Publish Mock Input": {
+      "main": [
+        [
+          {
+            "node": "Call Publish Mock API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Publish Mock API": {
+      "main": [
+        [
+          {
+            "node": "Publish Mock Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}

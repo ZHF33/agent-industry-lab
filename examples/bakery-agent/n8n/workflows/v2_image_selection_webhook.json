@@ -1,0 +1,116 @@
+{
+  "id": "v2ImageSelectionWebhook",
+  "name": "V2 Image Selection Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bakery-image-select",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "image-selection-webhook",
+      "name": "ImageSelectionWebhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $json || {};\nconst body = raw.body && typeof raw.body === 'object' ? raw.body : {};\nconst query = raw.query && typeof raw.query === 'object' ? raw.query : {};\nconst headers = raw.headers && typeof raw.headers === 'object' ? raw.headers : {};\nconst incoming = { ...raw, ...query, ...body };\nconst webhookSecret = $env.N8N_WEBHOOK_SECRET || '';\nif (!webhookSecret) throw new Error('N8N_WEBHOOK_SECRET is required.');\nconst receivedSecret = incoming.webhook_secret || headers['x-bakery-webhook-secret'] || headers['X-Bakery-Webhook-Secret'] || '';\nif (receivedSecret !== webhookSecret) throw new Error('Unauthorized webhook request.');\nconst packagePath = incoming.package || incoming.package_dir || incoming.package_path;\nif (!packagePath) throw new Error('package is required.');\nconst imageId = incoming.image_id || incoming.variant_id;\nif (!imageId) throw new Error('image_id is required.');\nreturn [{ json: {\n  package: packagePath,\n  image_id: imageId,\n  note: incoming.note || incoming.selection_note || '',\n  db: incoming.db || incoming.db_path || 'data/agent_ops.sqlite3',\n  no_sync_db: Boolean(incoming.no_sync_db)\n} }];"
+      },
+      "id": "image-selection-input",
+      "name": "Image Selection Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{($env.AGENT_API_URL || 'http://agent-api:8765') + '/image/select'}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{$env.AGENT_API_TOKEN ? ('Bearer ' + $env.AGENT_API_TOKEN) : ''}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{$json}}",
+        "options": {
+          "timeout": 360000
+        }
+      },
+      "id": "call-image-selection-api",
+      "name": "Call Image Selection API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { ok: Boolean($json.ok), channel: 'image-selection-response', image_selection: $json.image_selection || {} } }];"
+      },
+      "id": "image-selection-response",
+      "name": "Image Selection Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "ImageSelectionWebhook": {
+      "main": [
+        [
+          {
+            "node": "Image Selection Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Image Selection Input": {
+      "main": [
+        [
+          {
+            "node": "Call Image Selection API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Image Selection API": {
+      "main": [
+        [
+          {
+            "node": "Image Selection Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}

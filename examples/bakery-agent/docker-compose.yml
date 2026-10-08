@@ -1,0 +1,32 @@
+services:
+  agent-api:
+    build: .
+    restart: unless-stopped
+    ports: ["127.0.0.1:8765:8765"]
+    environment:
+      TZ: ${TZ:-America/New_York}
+      AGENT_API_TOKEN: ${AGENT_API_TOKEN:?Set a private Agent API token}
+      AGENT_API_ALLOW_LIVE_IMAGE: "false"
+    volumes:
+      - ./.env:/workspace/.env:ro
+      - ./data:/workspace/data
+      - ./runs:/workspace/runs
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:2.42.4
+    restart: unless-stopped
+    ports: ["127.0.0.1:5678:5678"]
+    environment:
+      TZ: ${TZ:-America/New_York}
+      N8N_HOST: localhost
+      WEBHOOK_URL: http://localhost:5678
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:?Set a private random encryption key}
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: "false"
+      AGENT_API_URL: http://agent-api:8765
+      AGENT_API_TOKEN: ${AGENT_API_TOKEN:?Set a private Agent API token}
+      N8N_WEBHOOK_SECRET: ${N8N_WEBHOOK_SECRET:?Set a private webhook secret}
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./n8n/workflows:/workspace/workflows:ro
+    depends_on: [agent-api]
+volumes:
+  n8n_data:

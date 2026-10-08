@@ -1,0 +1,116 @@
+{
+  "id": "v2ContentOperationWebhook",
+  "name": "V2 Content Operation Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bakery-content-request",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "content-request-webhook",
+      "name": "ContentRequestWebhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $json || {};\nconst body = raw.body && typeof raw.body === 'object' ? raw.body : {};\nconst query = raw.query && typeof raw.query === 'object' ? raw.query : {};\nconst headers = raw.headers && typeof raw.headers === 'object' ? raw.headers : {};\nconst incoming = { ...raw, ...query, ...body };\nconst webhookSecret = $env.N8N_WEBHOOK_SECRET || '';\nif (!webhookSecret) throw new Error('N8N_WEBHOOK_SECRET is required.');\nconst receivedSecret = incoming.webhook_secret || headers['x-bakery-webhook-secret'] || headers['X-Bakery-Webhook-Secret'] || '';\nif (receivedSecret !== webhookSecret) throw new Error('Unauthorized webhook request.');\nif (incoming.live_image === true || incoming.live_image === 'true') {\n  throw new Error('live_image is not allowed in the content webhook. Approve the package first, then use the image generation webhook.');\n}\nconst hasPlainRequest = Boolean(incoming.user_request || incoming.request || incoming.natural_request);\nconst required = ['product_name', 'content_type', 'image_type', 'image_style'];\nconst missing = hasPlainRequest ? [] : required.filter((key) => !incoming[key]);\nif (missing.length) {\n  throw new Error(`Missing content task fields: ${missing.join(', ')}. Send user_request in the webhook body or provide structured task fields.`);\n}\nconst imageCount = Number(incoming.image_count || 3);\nif (!Number.isInteger(imageCount) || imageCount < 1 || imageCount > 8) {\n  throw new Error('image_count must be an integer between 1 and 8.');\n}\nreturn [{ json: {\n  user_request: incoming.user_request || incoming.request || incoming.natural_request || '',\n  execution_mode: incoming.execution_mode || 'dry-run',\n  campaign_name: incoming.campaign_name || 'Webhook Bakery Content Operation',\n  product_name: incoming.product_name || '',\n  content_type: incoming.content_type || '',\n  image_type: incoming.image_type || '',\n  image_style: incoming.image_style || '',\n  platforms: incoming.platforms || 'xiaohongshu,douyin',\n  campaign_goal: incoming.campaign_goal || '',\n  audience: incoming.audience || '',\n  constraints: incoming.constraints || 'No fake price, inventory, sales volume, health claims, nutrition claims, official authorization, logo, trademark, or embedded text.',\n  image_count: imageCount,\n  skip_image: incoming.skip_image ?? false,\n  live_image: false\n} }];"
+      },
+      "id": "content-task-input",
+      "name": "Content Task Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{($env.AGENT_API_URL || 'http://agent-api:8765') + '/operation'}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{$env.AGENT_API_TOKEN ? ('Bearer ' + $env.AGENT_API_TOKEN) : ''}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{$json}}",
+        "options": {
+          "timeout": 360000
+        }
+      },
+      "id": "call-agent-api",
+      "name": "Call Bakery Agent API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { ok: Boolean($json.ok), channel: 'webhook-response', operation: $json.operation || {}, returncode: $json.returncode, stderr: $json.stderr || '' } }];"
+      },
+      "id": "webhook-response",
+      "name": "Webhook Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "ContentRequestWebhook": {
+      "main": [
+        [
+          {
+            "node": "Content Task Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Content Task Input": {
+      "main": [
+        [
+          {
+            "node": "Call Bakery Agent API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Bakery Agent API": {
+      "main": [
+        [
+          {
+            "node": "Webhook Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}
