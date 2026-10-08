@@ -3,7 +3,7 @@ app:
   icon: "\U0001F950"
   icon_background: '#FFEAD5'
   mode: workflow
-  name: 霸王茶姬 AI Operation Agent V1 - Local Test
+  name: Bakery AI Operations - Local Test
   use_icon_as_answer_icon: false
 dependencies: []
 kind: app
