@@ -10,6 +10,8 @@
 | [Agentic-VSDR](docs/existing-agents.md#agentic-vsdr) | Vision-language diagnosis, restoration tools | Existing research simulation; real-model evaluation separate |
 | [Bakery Content Review Skill](examples/bakery-review/README.md) | FastAPI, SQLite, structured evidence, n8n adapter | Local API implementation; see verification report |
 
+| [Travel Document Triage](examples/travel-triage/README.md) | Python, optional local Ollama tools | Rule prototype: 16 tests + 12 synthetic cases; real model unverified |
+
 ## Run the first Skill
 
 ```powershell
@@ -27,6 +29,6 @@ n8n handles business triggers and integration. Dify handles editable workflows a
 
 Daily work finishes a runnable increment and continues unfinished integrations before opening another case. Status levels: implemented → offline verified → model verified → platform verified → production operated. Templates alone do not count as platform verification.
 
-Next: real n8n execution, Dify knowledge integration, then the travel-document triage LangGraph Agent. No real customer records or credentials are included.
+Next: real n8n execution, Dify knowledge integration, then real-model verification of the travel-document triage prototype. No real customer records or credentials are included.
 
 [Architecture](docs/architecture.md) · [Verification](docs/verification.md) · [JOJO](https://github.com/ZHF33)
