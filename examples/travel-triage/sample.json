@@ -1,0 +1,182 @@
+[
+  {
+    "case_id": "demo-normal-1",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "  DEMO   traveler ",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-normal-2",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "  DEMO   traveler ",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-missing_itinerary-1",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": []
+  },
+  {
+    "case_id": "demo-missing_itinerary-2",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": []
+  },
+  {
+    "case_id": "demo-name_mismatch-1",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "Other Traveler",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-name_mismatch-2",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "Other Traveler",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-duplicate_document-1",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "Demo Traveler",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      {
+        "document_id": "synthetic-doc",
+        "kind": "attachment",
+        "pnr": "DEMO01",
+        "passenger_name": "Demo Traveler",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-duplicate_document-2",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "Demo Traveler",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      {
+        "document_id": "synthetic-doc",
+        "kind": "attachment",
+        "pnr": "DEMO01",
+        "passenger_name": "Demo Traveler",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-multiple_candidates-1",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "Demo Traveler",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "Demo Traveler",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-multiple_candidates-2",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "Demo Traveler",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": "Demo Traveler",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-insufficient_information-1",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": null,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  {
+    "case_id": "demo-insufficient_information-2",
+    "pnr": "DEMO01",
+    "passenger_name": "Demo Traveler",
+    "documents": [
+      {
+        "document_id": "synthetic-doc",
+        "kind": "itinerary",
+        "pnr": "DEMO01",
+        "passenger_name": null,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  }
+]
