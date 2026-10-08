@@ -11,6 +11,12 @@
 | [Bakery Content Review Skill](examples/bakery-review/README.md) | FastAPI, SQLite, structured evidence, n8n adapter | Local API implementation; see verification report |
 | [Travel Document Triage](examples/travel-triage/README.md) | Python, optional local Ollama tools | Rule prototype: 16 tests + 12 synthetic cases; real model unverified |
 
+## 基建知识库
+
+[每日基建拆解](knowledge-base/README.md)：业务问题、原理、最小示例、验证与选型。首篇：[幂等、事务与重试](knowledge-base/01-idempotency.md)。
+
+项目基建评估使用[选型清单](docs/infrastructure-checklist.md)，覆盖模型、数据、检索、队列、工具、部署、观测、安全与恢复；按需采用。
+
 ## Run the first Skill
 
 ```powershell
