@@ -27,8 +27,11 @@
     {
       "id": "travel-triage",
       "kind": "agent",
-      "status": "planned",
-      "model_verified": false
+      "status": "rule-prototype-offline-verified",
+      "model_verified": false,
+      "page": "examples/travel-triage/README.md",
+      "n8n_verified": false,
+      "dify_verified": false
     }
   ]
 }
