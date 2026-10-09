@@ -21,3 +21,7 @@ python triage.py sample.json --output ../../runtime/travel-demo.json
 ```powershell
 python -m pytest test_triage.py -q
 ```
+
+## Skill entry
+
+[SKILL.md](SKILL.md) provides the reusable operator instructions, safe execution command and evidence requirements. It wraps the existing runnable prototype; adding this entry does not imply real-model or platform verification.
