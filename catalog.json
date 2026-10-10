@@ -40,7 +40,13 @@
       "page": "examples/maintenance-triage/README.md",
       "model_verified": true,
       "n8n_verified": false,
-      "dify_verified": false
+      "dify_verified": false,
+      "integration_source": [
+        "LangGraph",
+        "n8n",
+        "FastAPI"
+      ],
+      "model_verified_scope": "standalone CLI, 2026-10-09"
     }
   ]
 }
