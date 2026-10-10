@@ -32,6 +32,15 @@
       "page": "examples/travel-triage/README.md",
       "n8n_verified": false,
       "dify_verified": false
+    },
+    {
+      "id": "maintenance-triage",
+      "kind": "agent",
+      "status": "local-model-verified",
+      "page": "examples/maintenance-triage/README.md",
+      "model_verified": true,
+      "n8n_verified": false,
+      "dify_verified": false
     }
   ]
 }
