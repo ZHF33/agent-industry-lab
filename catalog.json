@@ -47,6 +47,18 @@
         "FastAPI"
       ],
       "model_verified_scope": "standalone CLI, 2026-10-09"
+    },
+    {
+      "id": "inventory-discrepancy",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/inventory-discrepancy/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama"
+      ]
     }
   ]
 }
