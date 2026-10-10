@@ -18,7 +18,7 @@ python examples/maintenance-triage/agent.py examples/maintenance-triage/sample.j
 
 ## 基建取舍
 
-已使用：Ollama模型推理、JSON输入校验、工具适配器、受控编排、超时与人工审核边界。业务记录只读，暂不需要数据库状态、Redis缓存限流、对象存储、异步队列、写操作幂等及备份恢复。极小知识使用精确查询，暂不需要向量检索。独立本地CLI暂不需要容器反向代理或认证密钥；生产接入前必须补权限及审计。观测当前仅本地输出，评估仅有限合成验收；Dify、n8n、LangChain/LangGraph未接入也未验证，有集成需求后再引入。
+已使用：Ollama模型推理、JSON输入校验、工具适配器、受控编排、超时与人工审核边界。业务记录只读，暂不需要数据库状态、Redis缓存限流、对象存储、异步队列、写操作幂等及备份恢复。极小知识使用精确查询，暂不需要向量检索。独立本地CLI暂不需要容器反向代理或认证密钥；生产接入前必须补权限及审计。
 
 验证见 [VERIFICATION.md](VERIFICATION.md)，操作入口见 [SKILL.md](SKILL.md)。源码遵循仓库MIT许可；Ollama与Qwen3分别遵循上游许可，模型不上传。
 
