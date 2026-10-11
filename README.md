@@ -19,6 +19,8 @@
 
 项目基建评估使用[选型清单](docs/infrastructure-checklist.md)，覆盖模型、数据、检索、队列、工具、部署、观测、安全与恢复；按需采用。
 
+最新课程：[状态、检查点与人工审批](knowledge-base/03-state-and-human-review.md)。
+
 ## Run the first Skill
 
 ```powershell
