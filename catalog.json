@@ -59,6 +59,19 @@
         "FastAPI",
         "Ollama"
       ]
+    },
+    {
+      "id": "supplier-quote-review",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/supplier-quote-review/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama",
+        "Decimal"
+      ]
     }
   ]
 }
