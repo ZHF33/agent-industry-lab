@@ -12,6 +12,7 @@
 | [02：数据契约与输入校验](02-input-contract.md) | 零基础讲义；四组本地合成实验检查通过 |
 | [03：状态、检查点与人工审批](03-state-and-human-review.md) | 零基础讲义、状态概念示例、LangGraph 与 n8n 流程拆解 |
 | [04：报价、金额与计算工具](04-money-and-tool-calculation.md) | Decimal、费用口径、缺失数据与人工复核；附标准库示例 |
+| [05：时间、时区与观测快照](05-time-snapshots.md) | 时间口径、带时区计算、事件证据与固定快照；附标准库示例 |
 
 ## 学习方向
 
