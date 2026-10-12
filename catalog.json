@@ -72,6 +72,19 @@
         "Ollama",
         "Decimal"
       ]
+    },
+    {
+      "id": "shipment-delay",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/shipment-delay/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama",
+        "datetime"
+      ]
     }
   ]
 }
