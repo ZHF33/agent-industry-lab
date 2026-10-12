@@ -1,0 +1,1 @@
+{"case_id": "LOG-DEMO-01", "shipment_id": "SHIP-DEMO-01", "description": "合成运单：承诺UTC12点送达，观测UTC13点，只有10点枢纽扫描。请查询证据、计算时间差，给人工调查建议，不发送客户消息。"}
