@@ -21,7 +21,7 @@
 
 项目基建评估使用[选型清单](docs/infrastructure-checklist.md)，覆盖模型、数据、检索、队列、工具、部署、观测、安全与恢复；按需采用。
 
-最新课程：[报价、金额与计算工具](knowledge-base/04-money-and-tool-calculation.md)。
+最新课程：[时间、时区与观测快照](knowledge-base/05-time-snapshots.md)。
 
 ## Run the first Skill
 
