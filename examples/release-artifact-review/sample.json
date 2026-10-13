@@ -1,0 +1,1 @@
+{"case_id": "REL-REVIEW-DEMO-01", "release_id": "REL-DEMO-01", "description": "合成发布包：核对批准清单与提交文件，调查缺失、多余和哈希差异，交人工审核，不部署。"}
