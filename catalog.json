@@ -85,6 +85,19 @@
         "Ollama",
         "datetime"
       ]
+    },
+    {
+      "id": "release-artifact-review",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/release-artifact-review/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama",
+        "SHA-256"
+      ]
     }
   ]
 }
