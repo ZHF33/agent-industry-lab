@@ -1,0 +1,1 @@
+{"case_id": "SENSOR-DEMO-01", "feed_id": "FEED-DEMO-01", "description": "合成温度流出现999度且两分钟未更新，请调查数据质量，交人工复核，不操作设备。"}

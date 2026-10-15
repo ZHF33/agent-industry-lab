@@ -102,8 +102,20 @@
     {
       "id": "return-evidence-review",
       "kind": "agent",
-      "status": "source-released",
+      "status": "source-ready",
       "page": "examples/return-evidence-review/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama"
+      ]
+    },
+    {
+      "id": "sensor-data-quality",
+      "kind": "agent",
+      "status": "source-ready",
+      "page": "examples/sensor-data-quality/README.md",
       "stack": [
         "LangGraph",
         "n8n",
