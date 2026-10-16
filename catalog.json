@@ -122,6 +122,19 @@
         "FastAPI",
         "Ollama"
       ]
+    },
+    {
+      "id": "invoice-three-way-match",
+      "kind": "agent",
+      "status": "source-ready",
+      "page": "examples/invoice-three-way-match/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama",
+        "Decimal"
+      ]
     }
   ]
 }
