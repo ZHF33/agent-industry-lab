@@ -102,7 +102,7 @@
     {
       "id": "return-evidence-review",
       "kind": "agent",
-      "status": "source-ready",
+      "status": "source-released",
       "page": "examples/return-evidence-review/README.md",
       "stack": [
         "LangGraph",
@@ -114,7 +114,7 @@
     {
       "id": "sensor-data-quality",
       "kind": "agent",
-      "status": "source-ready",
+      "status": "source-released",
       "page": "examples/sensor-data-quality/README.md",
       "stack": [
         "LangGraph",
@@ -126,7 +126,7 @@
     {
       "id": "invoice-three-way-match",
       "kind": "agent",
-      "status": "source-ready",
+      "status": "source-released",
       "page": "examples/invoice-three-way-match/README.md",
       "stack": [
         "LangGraph",
