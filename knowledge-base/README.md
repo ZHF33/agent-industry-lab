@@ -13,6 +13,10 @@
 | [03：状态、检查点与人工审批](03-state-and-human-review.md) | 零基础讲义、状态概念示例、LangGraph 与 n8n 流程拆解 |
 | [04：报价、金额与计算工具](04-money-and-tool-calculation.md) | Decimal、费用口径、缺失数据与人工复核；附标准库示例 |
 | [05：时间、时区与观测快照](05-time-snapshots.md) | 时间口径、带时区计算、事件证据与固定快照；附标准库示例 |
+| [06：哈希与制品完整性](06-hashes-and-artifact-integrity.md) | 零基础讲义、配套标准库示例与工程取舍 |
+| [07：工具权限与对象范围](07-tool-permissions.md) | 零基础讲义、配套标准库示例与工程取舍 |
+| [08：数据新鲜度与质量](08-data-freshness.md) | 零基础讲义、配套标准库示例与工程取舍 |
+| [09：关联键与数据连接](09-record-identity-and-joins.md) | 零基础讲义、配套标准库示例与工程取舍 |
 
 ## 学习方向
 
