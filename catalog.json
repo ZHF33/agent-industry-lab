@@ -135,6 +135,19 @@
         "Ollama",
         "Decimal"
       ]
+    },
+    {
+      "id": "network-access-review",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/network-access-review/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama",
+        "ipaddress"
+      ]
     }
   ]
 }

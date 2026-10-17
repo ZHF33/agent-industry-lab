@@ -1,0 +1,1 @@
+{"case_id": "NET-CASE-DEMO-01", "request_id": "NET-DEMO-01", "description": "合成网络访问申请：核对目标IP、数据库端口与演示策略，交人工复核，不连接目标或改防火墙。"}
