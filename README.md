@@ -27,7 +27,7 @@
 
 项目基建评估使用[选型清单](docs/infrastructure-checklist.md)，覆盖模型、数据、检索、队列、工具、部署、观测、安全与恢复；按需采用。
 
-最新课程：[网络地址、端口与访问边界](knowledge-base/10-network-addresses-and-ports.md)。
+最新课程：[HTTP错误与未知结果](knowledge-base/11-http-errors-and-uncertain-outcomes.md)。
 
 ## Run the first Skill
 

@@ -18,6 +18,7 @@
 | [08：数据新鲜度与质量](08-data-freshness.md) | 零基础讲义、配套标准库示例与工程取舍 |
 | [09：关联键与数据连接](09-record-identity-and-joins.md) | 零基础讲义、配套标准库示例与工程取舍 |
 | [10：网络地址、端口与访问边界](10-network-addresses-and-ports.md) | IP网段、端口、容器网络与策略检查；附标准库示例 |
+| [11：HTTP错误与未知结果](11-http-errors-and-uncertain-outcomes.md) | 响应状态、超时、写操作核对与重试边界；附标准库示例 |
 
 ## 学习方向
 
