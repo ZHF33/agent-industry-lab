@@ -148,6 +148,18 @@
         "Ollama",
         "ipaddress"
       ]
+    },
+    {
+      "id": "api-failure-triage",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/api-failure-triage/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama"
+      ]
     }
   ]
 }
