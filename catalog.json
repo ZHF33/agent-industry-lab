@@ -160,6 +160,19 @@
         "FastAPI",
         "Ollama"
       ]
+    },
+    {
+      "id": "alert-noise-review",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/alert-noise-review/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama",
+        "Counter"
+      ]
     }
   ]
 }

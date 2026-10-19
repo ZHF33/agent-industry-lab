@@ -1,0 +1,1 @@
+{"case_id": "ALERT-CASE-DEMO-01", "batch_id": "ALERT-DEMO-01", "description": "合成告警批次存在重复投递与同类事件，请区分计数、冲突和分组，交人工复核，不静音或关闭告警。"}
