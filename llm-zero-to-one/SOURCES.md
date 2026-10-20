@@ -32,3 +32,7 @@
 - 本仓库原创教学解释、练习与示例采用MIT；任何未来实际改编或引用应按对应上游条款独立标注，不能用本声明替代许可核对。链接资料不代表获得商标使用或官方合作身份。
 
 许可核查入口：[Cookbook README](https://github.com/datawhalechina/llm-cookbook#license)、[LLM Course LICENSE](https://github.com/mlabonne/llm-course/blob/main/LICENSE)。
+
+## 原理课程补充阅读
+
+第一期原理加深版补充Transformer论文与Hugging Face分词教材，第二期阅读Cookbook模型/提示/解析器章节和Hugging Face聊天模板文档。逐段知识对应见[原理主线](PRINCIPLES-AND-SOURCE-MAP.md)及正文末尾；不是全部Notebook或外链通读。

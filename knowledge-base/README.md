@@ -20,6 +20,7 @@
 | [10：网络地址、端口与访问边界](10-network-addresses-and-ports.md) | IP网段、端口、容器网络与策略检查；附标准库示例 |
 | [11：HTTP错误与未知结果](11-http-errors-and-uncertain-outcomes.md) | 响应状态、超时、写操作核对与重试边界；附标准库示例 |
 | [12：事件身份与告警分组](12-event-identity-and-grouping.md) | 重复投递、冲突事件与Counter计数；附标准库示例 |
+| [13：TLS信任与续期证据](13-tls-trust-and-renewal-evidence.md) | 身份、信任链、握手、部署与观测区别；附离线示例 |
 
 ## 学习方向
 
