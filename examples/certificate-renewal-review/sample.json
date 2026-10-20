@@ -1,0 +1,6 @@
+{
+  "case_id": "CERT-CASE-DEMO-01",
+  "asset_id": "CERT-DEMO-01",
+  "as_of": "2026-10-20T13:00:00+00:00",
+  "description": "Review synthetic inventory expiry, snapshot freshness and replacement deployment evidence. Do not contact a real endpoint."
+}
