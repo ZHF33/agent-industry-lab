@@ -22,13 +22,21 @@
 | [Maintenance Ticket Triage](examples/maintenance-triage/README.md) | LangGraph, n8n HTTP workflow, local Ollama Qwen3 | Real model: 3 tools, 3 rounds; 8 control tests; human review |
 | [Travel Document Triage](examples/travel-triage/README.md) | Python, optional local Ollama tools | Rule prototype: 16 tests + 12 synthetic cases; real model unverified |
 
+## 从零到一学大模型
+
+**零基础中文教学 · 365个学习单元 · 从认识模型到交付行业应用。**
+
+[课程发布页](llm-zero-to-one/README.md) · [365天完整计划](llm-zero-to-one/PLAN-365.md) · [第一期：大模型到底是什么？](llm-zero-to-one/lessons/day-001.md) · [参考课程拆解](llm-zero-to-one/SOURCES.md)
+
+从Python与接口基础进入RAG、Agent、微调、推理优化和可靠性；每天配讲解、练习与交付要求。参考Datawhale与Maxime Labonne开源课程，独立编排原创案例。计划与已发布正文分别列出。
+
 ## 基建知识库
 
 [每日基建拆解](knowledge-base/README.md)：业务问题、原理、最小示例、验证与选型。首篇：[幂等、事务与重试](knowledge-base/01-idempotency.md)。
 
 项目基建评估使用[选型清单](docs/infrastructure-checklist.md)，覆盖模型、数据、检索、队列、工具、部署、观测、安全与恢复；按需采用。
 
-最新课程：[HTTP错误与未知结果](knowledge-base/11-http-errors-and-uncertain-outcomes.md)。
+最新基建课：[事件身份与告警分组](knowledge-base/12-event-identity-and-grouping.md)。
 
 ## Run the first Skill
 

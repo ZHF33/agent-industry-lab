@@ -1,0 +1,4966 @@
+{
+  "title": "从零到一学大模型",
+  "edition": "2026-10-20",
+  "days": [
+    {
+      "day": 1,
+      "module": "01",
+      "topic": "大模型到底是什么",
+      "goal": "能解释并在合成场景中判断“大模型到底是什么”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 001 解释记录：大模型到底是什么；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "published"
+    },
+    {
+      "day": 2,
+      "module": "01",
+      "topic": "聊天产品与模型的区别",
+      "goal": "能解释并在合成场景中判断“聊天产品与模型的区别”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 002 建模记录：聊天产品与模型的区别；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 3,
+      "module": "01",
+      "topic": "训练和使用的区别",
+      "goal": "能解释并在合成场景中判断“训练和使用的区别”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 003 练习记录：训练和使用的区别；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 4,
+      "module": "01",
+      "topic": "参数不是资料库目录",
+      "goal": "能解释并在合成场景中判断“参数不是资料库目录”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 004 实现设计记录：参数不是资料库目录；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 5,
+      "module": "01",
+      "topic": "语言片段Token",
+      "goal": "能解释并在合成场景中判断“语言片段Token”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 005 验收记录：语言片段Token；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 6,
+      "module": "01",
+      "topic": "上下文像工作台",
+      "goal": "能解释并在合成场景中判断“上下文像工作台”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 006 解释记录：上下文像工作台；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 7,
+      "module": "01",
+      "topic": "生成不等于查证",
+      "goal": "能解释并在合成场景中判断“生成不等于查证”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 007 建模记录：生成不等于查证；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 8,
+      "module": "01",
+      "topic": "模型不会自动联网",
+      "goal": "能解释并在合成场景中判断“模型不会自动联网”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 008 练习记录：模型不会自动联网；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 9,
+      "module": "01",
+      "topic": "为什么需要工具",
+      "goal": "能解释并在合成场景中判断“为什么需要工具”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 009 实现设计记录：为什么需要工具；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 10,
+      "module": "01",
+      "topic": "何时应该拒绝自动化",
+      "goal": "能解释并在合成场景中判断“何时应该拒绝自动化”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 010 验收记录：何时应该拒绝自动化；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 11,
+      "module": "01",
+      "topic": "把业务问题写成任务",
+      "goal": "能解释并在合成场景中判断“把业务问题写成任务”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 011 解释记录：把业务问题写成任务；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 12,
+      "module": "01",
+      "topic": "输入资料与任务指令",
+      "goal": "能解释并在合成场景中判断“输入资料与任务指令”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 012 建模记录：输入资料与任务指令；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 13,
+      "module": "01",
+      "topic": "输出格式与验收",
+      "goal": "能解释并在合成场景中判断“输出格式与验收”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 013 练习记录：输出格式与验收；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 14,
+      "module": "01",
+      "topic": "合成资料与隐私",
+      "goal": "能解释并在合成场景中判断“合成资料与隐私”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 014 实现设计记录：合成资料与隐私；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 15,
+      "module": "01",
+      "topic": "文件与文件夹",
+      "goal": "能解释并在合成场景中判断“文件与文件夹”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 015 验收记录：文件与文件夹；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 16,
+      "module": "01",
+      "topic": "绝对路径与相对路径",
+      "goal": "能解释并在合成场景中判断“绝对路径与相对路径”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 016 解释记录：绝对路径与相对路径；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 17,
+      "module": "01",
+      "topic": "文本编码与换行",
+      "goal": "能解释并在合成场景中判断“文本编码与换行”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 017 建模记录：文本编码与换行；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 18,
+      "module": "01",
+      "topic": "命令行与工作目录",
+      "goal": "能解释并在合成场景中判断“命令行与工作目录”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 018 练习记录：命令行与工作目录；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 19,
+      "module": "01",
+      "topic": "Python脚本是什么",
+      "goal": "能解释并在合成场景中判断“Python脚本是什么”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 019 实现设计记录：Python脚本是什么；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 20,
+      "module": "01",
+      "topic": "变量与字符串",
+      "goal": "能解释并在合成场景中判断“变量与字符串”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 020 验收记录：变量与字符串；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 21,
+      "module": "01",
+      "topic": "数字与布尔值",
+      "goal": "能解释并在合成场景中判断“数字与布尔值”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 021 解释记录：数字与布尔值；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 22,
+      "module": "01",
+      "topic": "列表装多条资料",
+      "goal": "能解释并在合成场景中判断“列表装多条资料”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 022 建模记录：列表装多条资料；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 23,
+      "module": "01",
+      "topic": "字典表示业务对象",
+      "goal": "能解释并在合成场景中判断“字典表示业务对象”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 023 练习记录：字典表示业务对象；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 24,
+      "module": "01",
+      "topic": "条件判断",
+      "goal": "能解释并在合成场景中判断“条件判断”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 024 实现设计记录：条件判断；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 25,
+      "module": "01",
+      "topic": "循环处理记录",
+      "goal": "能解释并在合成场景中判断“循环处理记录”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 025 验收记录：循环处理记录；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 26,
+      "module": "01",
+      "topic": "函数的输入输出",
+      "goal": "能解释并在合成场景中判断“函数的输入输出”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 026 解释记录：函数的输入输出；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 27,
+      "module": "01",
+      "topic": "异常与错误阅读",
+      "goal": "能解释并在合成场景中判断“异常与错误阅读”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 027 建模记录：异常与错误阅读；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 28,
+      "module": "01",
+      "topic": "JSON交换格式",
+      "goal": "能解释并在合成场景中判断“JSON交换格式”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 028 练习记录：JSON交换格式；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 29,
+      "module": "01",
+      "topic": "记录依赖与版本",
+      "goal": "能解释并在合成场景中判断“记录依赖与版本”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 029 实现设计记录：记录依赖与版本；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 30,
+      "module": "01",
+      "topic": "入门任务卡验收",
+      "goal": "能解释并在合成场景中判断“入门任务卡验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 030 验收记录：入门任务卡验收；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 31,
+      "module": "02",
+      "topic": "读取文本文件",
+      "goal": "能解释并在合成场景中判断“读取文本文件”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 031 解释记录：读取文本文件；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 32,
+      "module": "02",
+      "topic": "写入新文件避免覆盖",
+      "goal": "能解释并在合成场景中判断“写入新文件避免覆盖”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 032 建模记录：写入新文件避免覆盖；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 33,
+      "module": "02",
+      "topic": "路径存在性检查",
+      "goal": "能解释并在合成场景中判断“路径存在性检查”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 033 练习记录：路径存在性检查；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 34,
+      "module": "02",
+      "topic": "CSV表格读取",
+      "goal": "能解释并在合成场景中判断“CSV表格读取”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 034 实现设计记录：CSV表格读取；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 35,
+      "module": "02",
+      "topic": "JSON对象校验",
+      "goal": "能解释并在合成场景中判断“JSON对象校验”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 035 验收记录：JSON对象校验；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 36,
+      "module": "02",
+      "topic": "缺值与空字符串",
+      "goal": "能解释并在合成场景中判断“缺值与空字符串”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 036 解释记录：缺值与空字符串；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 37,
+      "module": "02",
+      "topic": "类型转换的风险",
+      "goal": "能解释并在合成场景中判断“类型转换的风险”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 037 建模记录：类型转换的风险；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 38,
+      "module": "02",
+      "topic": "字段白名单",
+      "goal": "能解释并在合成场景中判断“字段白名单”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 038 练习记录：字段白名单；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 39,
+      "module": "02",
+      "topic": "日期字符串解析",
+      "goal": "能解释并在合成场景中判断“日期字符串解析”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 039 实现设计记录：日期字符串解析；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 40,
+      "module": "02",
+      "topic": "统一时间口径",
+      "goal": "能解释并在合成场景中判断“统一时间口径”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 040 验收记录：统一时间口径；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 41,
+      "module": "02",
+      "topic": "正则表达式入门",
+      "goal": "能解释并在合成场景中判断“正则表达式入门”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 041 解释记录：正则表达式入门；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 42,
+      "module": "02",
+      "topic": "字符串清理",
+      "goal": "能解释并在合成场景中判断“字符串清理”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 042 建模记录：字符串清理；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 43,
+      "module": "02",
+      "topic": "Unicode姓名比较",
+      "goal": "能解释并在合成场景中判断“Unicode姓名比较”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 043 练习记录：Unicode姓名比较；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 44,
+      "module": "02",
+      "topic": "单位与数量",
+      "goal": "能解释并在合成场景中判断“单位与数量”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 044 实现设计记录：单位与数量；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 45,
+      "module": "02",
+      "topic": "金额Decimal",
+      "goal": "能解释并在合成场景中判断“金额Decimal”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 045 验收记录：金额Decimal；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 46,
+      "module": "02",
+      "topic": "记录唯一编号",
+      "goal": "能解释并在合成场景中判断“记录唯一编号”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 046 解释记录：记录唯一编号；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 47,
+      "module": "02",
+      "topic": "重复事件识别",
+      "goal": "能解释并在合成场景中判断“重复事件识别”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 047 建模记录：重复事件识别；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 48,
+      "module": "02",
+      "topic": "列表排序与筛选",
+      "goal": "能解释并在合成场景中判断“列表排序与筛选”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 048 练习记录：列表排序与筛选；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 49,
+      "module": "02",
+      "topic": "按键关联资料",
+      "goal": "能解释并在合成场景中判断“按键关联资料”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 049 实现设计记录：按键关联资料；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 50,
+      "module": "02",
+      "topic": "一对多关系",
+      "goal": "能解释并在合成场景中判断“一对多关系”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 050 验收记录：一对多关系；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 51,
+      "module": "02",
+      "topic": "汇总与分组",
+      "goal": "能解释并在合成场景中判断“汇总与分组”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 051 解释记录：汇总与分组；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 52,
+      "module": "02",
+      "topic": "函数拆分",
+      "goal": "能解释并在合成场景中判断“函数拆分”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 052 建模记录：函数拆分；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 53,
+      "module": "02",
+      "topic": "模块与导入",
+      "goal": "能解释并在合成场景中判断“模块与导入”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 053 练习记录：模块与导入；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 54,
+      "module": "02",
+      "topic": "虚拟环境原理",
+      "goal": "能解释并在合成场景中判断“虚拟环境原理”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 054 实现设计记录：虚拟环境原理；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 55,
+      "module": "02",
+      "topic": "安装与锁定依赖",
+      "goal": "能解释并在合成场景中判断“安装与锁定依赖”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 055 验收记录：安装与锁定依赖；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 56,
+      "module": "02",
+      "topic": "配置与环境变量",
+      "goal": "能解释并在合成场景中判断“配置与环境变量”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 056 解释记录：配置与环境变量；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 57,
+      "module": "02",
+      "topic": "日志脱敏",
+      "goal": "能解释并在合成场景中判断“日志脱敏”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 057 建模记录：日志脱敏；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 58,
+      "module": "02",
+      "topic": "编写一个断言",
+      "goal": "能解释并在合成场景中判断“编写一个断言”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 058 练习记录：编写一个断言；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 59,
+      "module": "02",
+      "topic": "测试正常与异常输入",
+      "goal": "能解释并在合成场景中判断“测试正常与异常输入”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 059 实现设计记录：测试正常与异常输入；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 60,
+      "module": "02",
+      "topic": "资料清洗小项目验收",
+      "goal": "能解释并在合成场景中判断“资料清洗小项目验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 060 验收记录：资料清洗小项目验收；附一个反例与自查答案",
+      "references": [
+        "F",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 61,
+      "module": "03",
+      "topic": "API像服务窗口",
+      "goal": "能解释并在合成场景中判断“API像服务窗口”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 061 解释记录：API像服务窗口；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 62,
+      "module": "03",
+      "topic": "HTTP请求与响应",
+      "goal": "能解释并在合成场景中判断“HTTP请求与响应”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 062 建模记录：HTTP请求与响应；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 63,
+      "module": "03",
+      "topic": "方法路径请求头",
+      "goal": "能解释并在合成场景中判断“方法路径请求头”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 063 练习记录：方法路径请求头；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 64,
+      "module": "03",
+      "topic": "状态码与业务结果",
+      "goal": "能解释并在合成场景中判断“状态码与业务结果”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 064 实现设计记录：状态码与业务结果；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 65,
+      "module": "03",
+      "topic": "密钥存放边界",
+      "goal": "能解释并在合成场景中判断“密钥存放边界”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 065 验收记录：密钥存放边界；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 66,
+      "module": "03",
+      "topic": "本地与云模型选择",
+      "goal": "能解释并在合成场景中判断“本地与云模型选择”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 066 解释记录：本地与云模型选择；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 67,
+      "module": "03",
+      "topic": "模型请求最小契约",
+      "goal": "能解释并在合成场景中判断“模型请求最小契约”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 067 建模记录：模型请求最小契约；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 68,
+      "module": "03",
+      "topic": "角色消息结构",
+      "goal": "能解释并在合成场景中判断“角色消息结构”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 068 练习记录：角色消息结构；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 69,
+      "module": "03",
+      "topic": "一次调用与会话",
+      "goal": "能解释并在合成场景中判断“一次调用与会话”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 069 实现设计记录：一次调用与会话；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 70,
+      "module": "03",
+      "topic": "提示任务与资料分离",
+      "goal": "能解释并在合成场景中判断“提示任务与资料分离”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 070 验收记录：提示任务与资料分离；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 71,
+      "module": "03",
+      "topic": "零样本分类",
+      "goal": "能解释并在合成场景中判断“零样本分类”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 071 解释记录：零样本分类；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 72,
+      "module": "03",
+      "topic": "少样本示例选择",
+      "goal": "能解释并在合成场景中判断“少样本示例选择”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 072 建模记录：少样本示例选择；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 73,
+      "module": "03",
+      "topic": "明确输出约束",
+      "goal": "能解释并在合成场景中判断“明确输出约束”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 073 练习记录：明确输出约束；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 74,
+      "module": "03",
+      "topic": "摘要不得补事实",
+      "goal": "能解释并在合成场景中判断“摘要不得补事实”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 074 实现设计记录：摘要不得补事实；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 75,
+      "module": "03",
+      "topic": "字段抽取缺值处理",
+      "goal": "能解释并在合成场景中判断“字段抽取缺值处理”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 075 验收记录：字段抽取缺值处理；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 76,
+      "module": "03",
+      "topic": "语气转换保留事实",
+      "goal": "能解释并在合成场景中判断“语气转换保留事实”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 076 解释记录：语气转换保留事实；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 77,
+      "module": "03",
+      "topic": "标签分类与未知类",
+      "goal": "能解释并在合成场景中判断“标签分类与未知类”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 077 建模记录：标签分类与未知类；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 78,
+      "module": "03",
+      "topic": "分步任务拆解",
+      "goal": "能解释并在合成场景中判断“分步任务拆解”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 078 练习记录：分步任务拆解；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 79,
+      "module": "03",
+      "topic": "只改变一个提示变量",
+      "goal": "能解释并在合成场景中判断“只改变一个提示变量”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 079 实现设计记录：只改变一个提示变量；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 80,
+      "module": "03",
+      "topic": "JSON解析失败",
+      "goal": "能解释并在合成场景中判断“JSON解析失败”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 080 验收记录：JSON解析失败；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 81,
+      "module": "03",
+      "topic": "JSON结构校验",
+      "goal": "能解释并在合成场景中判断“JSON结构校验”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 081 解释记录：JSON结构校验；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 82,
+      "module": "03",
+      "topic": "业务语义校验",
+      "goal": "能解释并在合成场景中判断“业务语义校验”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 082 建模记录：业务语义校验；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 83,
+      "module": "03",
+      "topic": "流式输出概念",
+      "goal": "能解释并在合成场景中判断“流式输出概念”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 083 练习记录：流式输出概念；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 84,
+      "module": "03",
+      "topic": "采样与随机性",
+      "goal": "能解释并在合成场景中判断“采样与随机性”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 084 实现设计记录：采样与随机性；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 85,
+      "module": "03",
+      "topic": "输出长度与截断",
+      "goal": "能解释并在合成场景中判断“输出长度与截断”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 085 验收记录：输出长度与截断；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 86,
+      "module": "03",
+      "topic": "上下文预算",
+      "goal": "能解释并在合成场景中判断“上下文预算”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 086 解释记录：上下文预算；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 87,
+      "module": "03",
+      "topic": "模型超时与取消",
+      "goal": "能解释并在合成场景中判断“模型超时与取消”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 087 建模记录：模型超时与取消；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 88,
+      "module": "03",
+      "topic": "费用估算与限额",
+      "goal": "能解释并在合成场景中判断“费用估算与限额”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 088 练习记录：费用估算与限额；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 89,
+      "module": "03",
+      "topic": "提示对照记录",
+      "goal": "能解释并在合成场景中判断“提示对照记录”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 089 实现设计记录：提示对照记录；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 90,
+      "module": "03",
+      "topic": "结构化助手验收",
+      "goal": "能解释并在合成场景中判断“结构化助手验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 090 验收记录：结构化助手验收；附一个反例与自查答案",
+      "references": [
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 91,
+      "module": "04",
+      "topic": "标量向量与表格",
+      "goal": "能解释并在合成场景中判断“标量向量与表格”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 091 解释记录：标量向量与表格；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 92,
+      "module": "04",
+      "topic": "向量长度",
+      "goal": "能解释并在合成场景中判断“向量长度”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 092 建模记录：向量长度；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 93,
+      "module": "04",
+      "topic": "点积与相似性",
+      "goal": "能解释并在合成场景中判断“点积与相似性”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 093 练习记录：点积与相似性；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 94,
+      "module": "04",
+      "topic": "矩阵形状",
+      "goal": "能解释并在合成场景中判断“矩阵形状”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 094 实现设计记录：矩阵形状；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 95,
+      "module": "04",
+      "topic": "矩阵乘法直觉",
+      "goal": "能解释并在合成场景中判断“矩阵乘法直觉”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 095 验收记录：矩阵乘法直觉；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 96,
+      "module": "04",
+      "topic": "平均值和方差",
+      "goal": "能解释并在合成场景中判断“平均值和方差”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 096 解释记录：平均值和方差；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 97,
+      "module": "04",
+      "topic": "概率与条件概率",
+      "goal": "能解释并在合成场景中判断“概率与条件概率”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 097 建模记录：概率与条件概率；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 98,
+      "module": "04",
+      "topic": "分类概率与置信边界",
+      "goal": "能解释并在合成场景中判断“分类概率与置信边界”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 098 练习记录：分类概率与置信边界；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 99,
+      "module": "04",
+      "topic": "损失函数直觉",
+      "goal": "能解释并在合成场景中判断“损失函数直觉”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 099 实现设计记录：损失函数直觉；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 100,
+      "module": "04",
+      "topic": "导数像变化率",
+      "goal": "能解释并在合成场景中判断“导数像变化率”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 100 验收记录：导数像变化率；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 101,
+      "module": "04",
+      "topic": "梯度像调整方向",
+      "goal": "能解释并在合成场景中判断“梯度像调整方向”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 101 解释记录：梯度像调整方向；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 102,
+      "module": "04",
+      "topic": "学习率与步幅",
+      "goal": "能解释并在合成场景中判断“学习率与步幅”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 102 建模记录：学习率与步幅；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 103,
+      "module": "04",
+      "topic": "训练验证测试分开",
+      "goal": "能解释并在合成场景中判断“训练验证测试分开”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 103 练习记录：训练验证测试分开；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 104,
+      "module": "04",
+      "topic": "数据泄漏例子",
+      "goal": "能解释并在合成场景中判断“数据泄漏例子”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 104 实现设计记录：数据泄漏例子；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 105,
+      "module": "04",
+      "topic": "神经网络权重",
+      "goal": "能解释并在合成场景中判断“神经网络权重”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 105 验收记录：神经网络权重；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 106,
+      "module": "04",
+      "topic": "激活函数作用",
+      "goal": "能解释并在合成场景中判断“激活函数作用”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 106 解释记录：激活函数作用；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 107,
+      "module": "04",
+      "topic": "词袋与词序",
+      "goal": "能解释并在合成场景中判断“词袋与词序”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 107 建模记录：词袋与词序；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 108,
+      "module": "04",
+      "topic": "词向量直觉",
+      "goal": "能解释并在合成场景中判断“词向量直觉”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 108 练习记录：词向量直觉；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 109,
+      "module": "04",
+      "topic": "分词器与编号",
+      "goal": "能解释并在合成场景中判断“分词器与编号”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 109 实现设计记录：分词器与编号；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 110,
+      "module": "04",
+      "topic": "Embedding层",
+      "goal": "能解释并在合成场景中判断“Embedding层”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 110 验收记录：Embedding层；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 111,
+      "module": "04",
+      "topic": "位置编码的目的",
+      "goal": "能解释并在合成场景中判断“位置编码的目的”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 111 解释记录：位置编码的目的；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 112,
+      "module": "04",
+      "topic": "注意力的输入输出",
+      "goal": "能解释并在合成场景中判断“注意力的输入输出”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 112 建模记录：注意力的输入输出；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 113,
+      "module": "04",
+      "topic": "自注意力与上下文",
+      "goal": "能解释并在合成场景中判断“自注意力与上下文”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 113 练习记录：自注意力与上下文；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 114,
+      "module": "04",
+      "topic": "因果掩码",
+      "goal": "能解释并在合成场景中判断“因果掩码”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 114 实现设计记录：因果掩码；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 115,
+      "module": "04",
+      "topic": "Transformer块",
+      "goal": "能解释并在合成场景中判断“Transformer块”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 115 验收记录：Transformer块；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 116,
+      "module": "04",
+      "topic": "下一个Token目标",
+      "goal": "能解释并在合成场景中判断“下一个Token目标”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 116 解释记录：下一个Token目标；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 117,
+      "module": "04",
+      "topic": "自回归生成",
+      "goal": "能解释并在合成场景中判断“自回归生成”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 117 建模记录：自回归生成；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 118,
+      "module": "04",
+      "topic": "指令模型与基础模型",
+      "goal": "能解释并在合成场景中判断“指令模型与基础模型”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 118 练习记录：指令模型与基础模型；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 119,
+      "module": "04",
+      "topic": "机制图误区自测",
+      "goal": "能解释并在合成场景中判断“机制图误区自测”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 119 实现设计记录：机制图误区自测；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 120,
+      "module": "04",
+      "topic": "模型机制阶段验收",
+      "goal": "能解释并在合成场景中判断“模型机制阶段验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 120 验收记录：模型机制阶段验收；附一个反例与自查答案",
+      "references": [
+        "F"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 121,
+      "module": "05",
+      "topic": "知识问答的证据需求",
+      "goal": "能解释并在合成场景中判断“知识问答的证据需求”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 121 解释记录：知识问答的证据需求；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 122,
+      "module": "05",
+      "topic": "文档来源登记",
+      "goal": "能解释并在合成场景中判断“文档来源登记”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 122 建模记录：文档来源登记；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 123,
+      "module": "05",
+      "topic": "文档许可与可用范围",
+      "goal": "能解释并在合成场景中判断“文档许可与可用范围”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 123 练习记录：文档许可与可用范围；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 124,
+      "module": "05",
+      "topic": "文本提取边界",
+      "goal": "能解释并在合成场景中判断“文本提取边界”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 124 实现设计记录：文本提取边界；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 125,
+      "module": "05",
+      "topic": "PDF文字与扫描件",
+      "goal": "能解释并在合成场景中判断“PDF文字与扫描件”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 125 验收记录：PDF文字与扫描件；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 126,
+      "module": "05",
+      "topic": "OCR错误识别",
+      "goal": "能解释并在合成场景中判断“OCR错误识别”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 126 解释记录：OCR错误识别；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 127,
+      "module": "05",
+      "topic": "Markdown标题结构",
+      "goal": "能解释并在合成场景中判断“Markdown标题结构”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 127 建模记录：Markdown标题结构；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 128,
+      "module": "05",
+      "topic": "表格与段落",
+      "goal": "能解释并在合成场景中判断“表格与段落”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 128 练习记录：表格与段落；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 129,
+      "module": "05",
+      "topic": "保留页码与来源",
+      "goal": "能解释并在合成场景中判断“保留页码与来源”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 129 实现设计记录：保留页码与来源；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 130,
+      "module": "05",
+      "topic": "去噪与重复文档",
+      "goal": "能解释并在合成场景中判断“去噪与重复文档”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 130 验收记录：去噪与重复文档；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 131,
+      "module": "05",
+      "topic": "分块目标",
+      "goal": "能解释并在合成场景中判断“分块目标”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 131 解释记录：分块目标；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 132,
+      "module": "05",
+      "topic": "固定长度分块",
+      "goal": "能解释并在合成场景中判断“固定长度分块”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 132 建模记录：固定长度分块；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 133,
+      "module": "05",
+      "topic": "按标题分块",
+      "goal": "能解释并在合成场景中判断“按标题分块”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 133 练习记录：按标题分块；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 134,
+      "module": "05",
+      "topic": "重叠窗口取舍",
+      "goal": "能解释并在合成场景中判断“重叠窗口取舍”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 134 实现设计记录：重叠窗口取舍；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 135,
+      "module": "05",
+      "topic": "父子片段关系",
+      "goal": "能解释并在合成场景中判断“父子片段关系”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 135 验收记录：父子片段关系；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 136,
+      "module": "05",
+      "topic": "文档元数据",
+      "goal": "能解释并在合成场景中判断“文档元数据”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 136 解释记录：文档元数据；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 137,
+      "module": "05",
+      "topic": "版本与生效时间",
+      "goal": "能解释并在合成场景中判断“版本与生效时间”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 137 建模记录：版本与生效时间；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 138,
+      "module": "05",
+      "topic": "关键词检索",
+      "goal": "能解释并在合成场景中判断“关键词检索”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 138 练习记录：关键词检索；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 139,
+      "module": "05",
+      "topic": "倒排索引直觉",
+      "goal": "能解释并在合成场景中判断“倒排索引直觉”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 139 实现设计记录：倒排索引直觉；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 140,
+      "module": "05",
+      "topic": "TF-IDF直觉",
+      "goal": "能解释并在合成场景中判断“TF-IDF直觉”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 140 验收记录：TF-IDF直觉；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 141,
+      "module": "05",
+      "topic": "BM25直觉",
+      "goal": "能解释并在合成场景中判断“BM25直觉”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 141 解释记录：BM25直觉；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 142,
+      "module": "05",
+      "topic": "Embedding输入输出",
+      "goal": "能解释并在合成场景中判断“Embedding输入输出”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 142 建模记录：Embedding输入输出；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 143,
+      "module": "05",
+      "topic": "余弦相似度",
+      "goal": "能解释并在合成场景中判断“余弦相似度”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 143 练习记录：余弦相似度；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 144,
+      "module": "05",
+      "topic": "向量归一化",
+      "goal": "能解释并在合成场景中判断“向量归一化”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 144 实现设计记录：向量归一化；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 145,
+      "module": "05",
+      "topic": "模型维度一致性",
+      "goal": "能解释并在合成场景中判断“模型维度一致性”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 145 验收记录：模型维度一致性；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 146,
+      "module": "05",
+      "topic": "小库暴力向量检索",
+      "goal": "能解释并在合成场景中判断“小库暴力向量检索”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 146 解释记录：小库暴力向量检索；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 147,
+      "module": "05",
+      "topic": "向量索引作用",
+      "goal": "能解释并在合成场景中判断“向量索引作用”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 147 建模记录：向量索引作用；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 148,
+      "module": "05",
+      "topic": "元数据过滤",
+      "goal": "能解释并在合成场景中判断“元数据过滤”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 148 练习记录：元数据过滤；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 149,
+      "module": "05",
+      "topic": "检索结果检查表",
+      "goal": "能解释并在合成场景中判断“检索结果检查表”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 149 实现设计记录：检索结果检查表；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 150,
+      "module": "05",
+      "topic": "证据检索项目验收",
+      "goal": "能解释并在合成场景中判断“证据检索项目验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 150 验收记录：证据检索项目验收；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 151,
+      "module": "06",
+      "topic": "检索增强生成全链路",
+      "goal": "能解释并在合成场景中判断“检索增强生成全链路”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 151 解释记录：检索增强生成全链路；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 152,
+      "module": "06",
+      "topic": "问题到检索查询",
+      "goal": "能解释并在合成场景中判断“问题到检索查询”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 152 建模记录：问题到检索查询；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 153,
+      "module": "06",
+      "topic": "Top-k选择",
+      "goal": "能解释并在合成场景中判断“Top-k选择”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 153 练习记录：Top-k选择；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 154,
+      "module": "06",
+      "topic": "召回与精确率",
+      "goal": "能解释并在合成场景中判断“召回与精确率”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 154 实现设计记录：召回与精确率；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 155,
+      "module": "06",
+      "topic": "相关不等于充分",
+      "goal": "能解释并在合成场景中判断“相关不等于充分”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 155 验收记录：相关不等于充分；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 156,
+      "module": "06",
+      "topic": "上下文拼装",
+      "goal": "能解释并在合成场景中判断“上下文拼装”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 156 解释记录：上下文拼装；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 157,
+      "module": "06",
+      "topic": "引用字段契约",
+      "goal": "能解释并在合成场景中判断“引用字段契约”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 157 建模记录：引用字段契约；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 158,
+      "module": "06",
+      "topic": "无证据时不回答",
+      "goal": "能解释并在合成场景中判断“无证据时不回答”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 158 练习记录：无证据时不回答；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 159,
+      "module": "06",
+      "topic": "引用与实际支持关系",
+      "goal": "能解释并在合成场景中判断“引用与实际支持关系”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 159 实现设计记录：引用与实际支持关系；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 160,
+      "module": "06",
+      "topic": "多文档矛盾",
+      "goal": "能解释并在合成场景中判断“多文档矛盾”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 160 验收记录：多文档矛盾；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 161,
+      "module": "06",
+      "topic": "过期知识处理",
+      "goal": "能解释并在合成场景中判断“过期知识处理”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 161 解释记录：过期知识处理；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 162,
+      "module": "06",
+      "topic": "权限过滤在检索前",
+      "goal": "能解释并在合成场景中判断“权限过滤在检索前”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 162 建模记录：权限过滤在检索前；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 163,
+      "module": "06",
+      "topic": "多轮问题改写",
+      "goal": "能解释并在合成场景中判断“多轮问题改写”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 163 练习记录：多轮问题改写；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 164,
+      "module": "06",
+      "topic": "查询扩展风险",
+      "goal": "能解释并在合成场景中判断“查询扩展风险”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 164 实现设计记录：查询扩展风险；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 165,
+      "module": "06",
+      "topic": "多路检索",
+      "goal": "能解释并在合成场景中判断“多路检索”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 165 验收记录：多路检索；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 166,
+      "module": "06",
+      "topic": "关键词向量混合",
+      "goal": "能解释并在合成场景中判断“关键词向量混合”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 166 解释记录：关键词向量混合；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 167,
+      "module": "06",
+      "topic": "分数融合",
+      "goal": "能解释并在合成场景中判断“分数融合”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 167 建模记录：分数融合；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 168,
+      "module": "06",
+      "topic": "重排的用途",
+      "goal": "能解释并在合成场景中判断“重排的用途”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 168 练习记录：重排的用途；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 169,
+      "module": "06",
+      "topic": "重复片段去除",
+      "goal": "能解释并在合成场景中判断“重复片段去除”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 169 实现设计记录：重复片段去除；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 170,
+      "module": "06",
+      "topic": "长上下文取舍",
+      "goal": "能解释并在合成场景中判断“长上下文取舍”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 170 验收记录：长上下文取舍；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 171,
+      "module": "06",
+      "topic": "检索失败案例集",
+      "goal": "能解释并在合成场景中判断“检索失败案例集”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 171 解释记录：检索失败案例集；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 172,
+      "module": "06",
+      "topic": "生成失败案例集",
+      "goal": "能解释并在合成场景中判断“生成失败案例集”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 172 建模记录：生成失败案例集；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 173,
+      "module": "06",
+      "topic": "构建标准答案",
+      "goal": "能解释并在合成场景中判断“构建标准答案”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 173 练习记录：构建标准答案；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 174,
+      "module": "06",
+      "topic": "检索指标手算",
+      "goal": "能解释并在合成场景中判断“检索指标手算”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 174 实现设计记录：检索指标手算；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 175,
+      "module": "06",
+      "topic": "回答忠实度评估",
+      "goal": "能解释并在合成场景中判断“回答忠实度评估”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 175 验收记录：回答忠实度评估；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 176,
+      "module": "06",
+      "topic": "模型评委偏差",
+      "goal": "能解释并在合成场景中判断“模型评委偏差”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 176 解释记录：模型评委偏差；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 177,
+      "module": "06",
+      "topic": "RAG版本对照",
+      "goal": "能解释并在合成场景中判断“RAG版本对照”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 177 建模记录：RAG版本对照；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 178,
+      "module": "06",
+      "topic": "延迟和费用权衡",
+      "goal": "能解释并在合成场景中判断“延迟和费用权衡”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 178 练习记录：延迟和费用权衡；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 179,
+      "module": "06",
+      "topic": "知识助手回归记录",
+      "goal": "能解释并在合成场景中判断“知识助手回归记录”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 179 实现设计记录：知识助手回归记录；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 180,
+      "module": "06",
+      "topic": "RAG阶段项目验收",
+      "goal": "能解释并在合成场景中判断“RAG阶段项目验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 180 验收记录：RAG阶段项目验收；附一个反例与自查答案",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 181,
+      "module": "07",
+      "topic": "界面服务模型分工",
+      "goal": "能解释并在合成场景中判断“界面服务模型分工”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 181 解释记录：界面服务模型分工；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 182,
+      "module": "07",
+      "topic": "FastAPI请求模型",
+      "goal": "能解释并在合成场景中判断“FastAPI请求模型”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 182 建模记录：FastAPI请求模型；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 183,
+      "module": "07",
+      "topic": "错误响应契约",
+      "goal": "能解释并在合成场景中判断“错误响应契约”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 183 练习记录：错误响应契约；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 184,
+      "module": "07",
+      "topic": "API密钥与用户身份",
+      "goal": "能解释并在合成场景中判断“API密钥与用户身份”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 184 实现设计记录：API密钥与用户身份；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 185,
+      "module": "07",
+      "topic": "会话标识",
+      "goal": "能解释并在合成场景中判断“会话标识”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 185 验收记录：会话标识；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 186,
+      "module": "07",
+      "topic": "最小聊天页面设计",
+      "goal": "能解释并在合成场景中判断“最小聊天页面设计”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 186 解释记录：最小聊天页面设计；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 187,
+      "module": "07",
+      "topic": "Gradio输入输出",
+      "goal": "能解释并在合成场景中判断“Gradio输入输出”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 187 建模记录：Gradio输入输出；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 188,
+      "module": "07",
+      "topic": "Streamlit状态概念",
+      "goal": "能解释并在合成场景中判断“Streamlit状态概念”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 188 练习记录：Streamlit状态概念；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 189,
+      "module": "07",
+      "topic": "上传文件大小限制",
+      "goal": "能解释并在合成场景中判断“上传文件大小限制”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 189 实现设计记录：上传文件大小限制；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 190,
+      "module": "07",
+      "topic": "文件路径隔离",
+      "goal": "能解释并在合成场景中判断“文件路径隔离”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 190 验收记录：文件路径隔离；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 191,
+      "module": "07",
+      "topic": "资料处理状态",
+      "goal": "能解释并在合成场景中判断“资料处理状态”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 191 解释记录：资料处理状态；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 192,
+      "module": "07",
+      "topic": "请求取消语义",
+      "goal": "能解释并在合成场景中判断“请求取消语义”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 192 建模记录：请求取消语义；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 193,
+      "module": "07",
+      "topic": "流式页面错误处理",
+      "goal": "能解释并在合成场景中判断“流式页面错误处理”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 193 练习记录：流式页面错误处理；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 194,
+      "module": "07",
+      "topic": "前端不得保存服务密钥",
+      "goal": "能解释并在合成场景中判断“前端不得保存服务密钥”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 194 实现设计记录：前端不得保存服务密钥；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 195,
+      "module": "07",
+      "topic": "CORS概念",
+      "goal": "能解释并在合成场景中判断“CORS概念”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 195 验收记录：CORS概念；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 196,
+      "module": "07",
+      "topic": "可访问性与空状态",
+      "goal": "能解释并在合成场景中判断“可访问性与空状态”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 196 解释记录：可访问性与空状态；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 197,
+      "module": "07",
+      "topic": "输入校验提示",
+      "goal": "能解释并在合成场景中判断“输入校验提示”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 197 建模记录：输入校验提示；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 198,
+      "module": "07",
+      "topic": "人工反馈入口",
+      "goal": "能解释并在合成场景中判断“人工反馈入口”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 198 练习记录：人工反馈入口；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 199,
+      "module": "07",
+      "topic": "证据展开方式",
+      "goal": "能解释并在合成场景中判断“证据展开方式”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 199 实现设计记录：证据展开方式；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 200,
+      "module": "07",
+      "topic": "对话导出脱敏",
+      "goal": "能解释并在合成场景中判断“对话导出脱敏”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 200 验收记录：对话导出脱敏；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 201,
+      "module": "07",
+      "topic": "配置模板",
+      "goal": "能解释并在合成场景中判断“配置模板”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 201 解释记录：配置模板；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 202,
+      "module": "07",
+      "topic": "健康检查设计",
+      "goal": "能解释并在合成场景中判断“健康检查设计”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 202 建模记录：健康检查设计；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 203,
+      "module": "07",
+      "topic": "容器镜像概念",
+      "goal": "能解释并在合成场景中判断“容器镜像概念”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 203 练习记录：容器镜像概念；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 204,
+      "module": "07",
+      "topic": "端口与服务监听",
+      "goal": "能解释并在合成场景中判断“端口与服务监听”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 204 实现设计记录：端口与服务监听；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 205,
+      "module": "07",
+      "topic": "反向代理用途",
+      "goal": "能解释并在合成场景中判断“反向代理用途”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 205 验收记录：反向代理用途；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 206,
+      "module": "07",
+      "topic": "HTTP与TLS边界",
+      "goal": "能解释并在合成场景中判断“HTTP与TLS边界”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 206 解释记录：HTTP与TLS边界；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 207,
+      "module": "07",
+      "topic": "单进程并发限制",
+      "goal": "能解释并在合成场景中判断“单进程并发限制”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 207 建模记录：单进程并发限制；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 208,
+      "module": "07",
+      "topic": "依赖许可检查",
+      "goal": "能解释并在合成场景中判断“依赖许可检查”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 208 练习记录：依赖许可检查；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 209,
+      "module": "07",
+      "topic": "应用使用说明",
+      "goal": "能解释并在合成场景中判断“应用使用说明”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 209 实现设计记录：应用使用说明；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 210,
+      "module": "07",
+      "topic": "知识应用界面验收",
+      "goal": "能解释并在合成场景中判断“知识应用界面验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 210 验收记录：知识应用界面验收；附一个反例与自查答案",
+      "references": [
+        "C",
+        "E",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 211,
+      "module": "08",
+      "topic": "Agent与固定链区别",
+      "goal": "能解释并在合成场景中判断“Agent与固定链区别”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 211 解释记录：Agent与固定链区别；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 212,
+      "module": "08",
+      "topic": "工具函数契约",
+      "goal": "能解释并在合成场景中判断“工具函数契约”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 212 建模记录：工具函数契约；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 213,
+      "module": "08",
+      "topic": "参数结构白名单",
+      "goal": "能解释并在合成场景中判断“参数结构白名单”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 213 练习记录：参数结构白名单；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 214,
+      "module": "08",
+      "topic": "工具对象权限",
+      "goal": "能解释并在合成场景中判断“工具对象权限”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 214 实现设计记录：工具对象权限；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 215,
+      "module": "08",
+      "topic": "只读工具优先",
+      "goal": "能解释并在合成场景中判断“只读工具优先”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 215 验收记录：只读工具优先；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 216,
+      "module": "08",
+      "topic": "模型选择工具",
+      "goal": "能解释并在合成场景中判断“模型选择工具”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 216 解释记录：模型选择工具；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 217,
+      "module": "08",
+      "topic": "工具执行结果回传",
+      "goal": "能解释并在合成场景中判断“工具执行结果回传”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 217 建模记录：工具执行结果回传；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 218,
+      "module": "08",
+      "topic": "有界循环",
+      "goal": "能解释并在合成场景中判断“有界循环”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 218 练习记录：有界循环；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 219,
+      "module": "08",
+      "topic": "重复调用识别",
+      "goal": "能解释并在合成场景中判断“重复调用识别”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 219 实现设计记录：重复调用识别；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 220,
+      "module": "08",
+      "topic": "失败结束而非伪成功",
+      "goal": "能解释并在合成场景中判断“失败结束而非伪成功”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 220 验收记录：失败结束而非伪成功；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 221,
+      "module": "08",
+      "topic": "LangGraph状态",
+      "goal": "能解释并在合成场景中判断“LangGraph状态”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 221 解释记录：LangGraph状态；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 222,
+      "module": "08",
+      "topic": "节点与条件边",
+      "goal": "能解释并在合成场景中判断“节点与条件边”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 222 建模记录：节点与条件边；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 223,
+      "module": "08",
+      "topic": "检查点与线程编号",
+      "goal": "能解释并在合成场景中判断“检查点与线程编号”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 223 练习记录：检查点与线程编号；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 224,
+      "module": "08",
+      "topic": "人工中断",
+      "goal": "能解释并在合成场景中判断“人工中断”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 224 实现设计记录：人工中断；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 225,
+      "module": "08",
+      "topic": "审核恢复",
+      "goal": "能解释并在合成场景中判断“审核恢复”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 225 验收记录：审核恢复；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 226,
+      "module": "08",
+      "topic": "中断节点重放边界",
+      "goal": "能解释并在合成场景中判断“中断节点重放边界”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 226 解释记录：中断节点重放边界；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 227,
+      "module": "08",
+      "topic": "工具轨迹与脱敏",
+      "goal": "能解释并在合成场景中判断“工具轨迹与脱敏”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 227 建模记录：工具轨迹与脱敏；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 228,
+      "module": "08",
+      "topic": "结构化最终结果",
+      "goal": "能解释并在合成场景中判断“结构化最终结果”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 228 练习记录：结构化最终结果；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 229,
+      "module": "08",
+      "topic": "LangChain适配取舍",
+      "goal": "能解释并在合成场景中判断“LangChain适配取舍”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 229 实现设计记录：LangChain适配取舍；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 230,
+      "module": "08",
+      "topic": "MCP服务与客户端",
+      "goal": "能解释并在合成场景中判断“MCP服务与客户端”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 230 验收记录：MCP服务与客户端；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 231,
+      "module": "08",
+      "topic": "MCP不替代授权",
+      "goal": "能解释并在合成场景中判断“MCP不替代授权”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 231 解释记录：MCP不替代授权；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 232,
+      "module": "08",
+      "topic": "n8n触发入口",
+      "goal": "能解释并在合成场景中判断“n8n触发入口”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 232 建模记录：n8n触发入口；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 233,
+      "module": "08",
+      "topic": "n8n HTTP业务调用",
+      "goal": "能解释并在合成场景中判断“n8n HTTP业务调用”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 233 练习记录：n8n HTTP业务调用；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 234,
+      "module": "08",
+      "topic": "n8n凭据管理",
+      "goal": "能解释并在合成场景中判断“n8n凭据管理”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 234 实现设计记录：n8n凭据管理；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 235,
+      "module": "08",
+      "topic": "Dify应用与知识入口",
+      "goal": "能解释并在合成场景中判断“Dify应用与知识入口”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 235 验收记录：Dify应用与知识入口；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 236,
+      "module": "08",
+      "topic": "单一编排责任",
+      "goal": "能解释并在合成场景中判断“单一编排责任”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 236 解释记录：单一编排责任；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 237,
+      "module": "08",
+      "topic": "多Agent何时不需要",
+      "goal": "能解释并在合成场景中判断“多Agent何时不需要”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 237 建模记录：多Agent何时不需要；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 238,
+      "module": "08",
+      "topic": "模型权限红队样例",
+      "goal": "能解释并在合成场景中判断“模型权限红队样例”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 238 练习记录：模型权限红队样例；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 239,
+      "module": "08",
+      "topic": "Agent集成文档",
+      "goal": "能解释并在合成场景中判断“Agent集成文档”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 239 实现设计记录：Agent集成文档；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 240,
+      "module": "08",
+      "topic": "Agent阶段项目验收",
+      "goal": "能解释并在合成场景中判断“Agent阶段项目验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 240 验收记录：Agent阶段项目验收；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 241,
+      "module": "09",
+      "topic": "什么时候不该微调",
+      "goal": "能解释并在合成场景中判断“什么时候不该微调”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 241 解释记录：什么时候不该微调；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 242,
+      "module": "09",
+      "topic": "提示RAG与微调比较",
+      "goal": "能解释并在合成场景中判断“提示RAG与微调比较”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 242 建模记录：提示RAG与微调比较；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 243,
+      "module": "09",
+      "topic": "训练目标与业务指标",
+      "goal": "能解释并在合成场景中判断“训练目标与业务指标”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 243 练习记录：训练目标与业务指标；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 244,
+      "module": "09",
+      "topic": "数据授权与脱敏",
+      "goal": "能解释并在合成场景中判断“数据授权与脱敏”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 244 实现设计记录：数据授权与脱敏；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 245,
+      "module": "09",
+      "topic": "指令样例结构",
+      "goal": "能解释并在合成场景中判断“指令样例结构”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 245 验收记录：指令样例结构；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 246,
+      "module": "09",
+      "topic": "聊天模板",
+      "goal": "能解释并在合成场景中判断“聊天模板”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 246 解释记录：聊天模板；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 247,
+      "module": "09",
+      "topic": "训练验证切分",
+      "goal": "能解释并在合成场景中判断“训练验证切分”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 247 建模记录：训练验证切分；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 248,
+      "module": "09",
+      "topic": "去重和污染检查",
+      "goal": "能解释并在合成场景中判断“去重和污染检查”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 248 练习记录：去重和污染检查；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 249,
+      "module": "09",
+      "topic": "类别与长度分布",
+      "goal": "能解释并在合成场景中判断“类别与长度分布”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 249 实现设计记录：类别与长度分布；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 250,
+      "module": "09",
+      "topic": "标注规则",
+      "goal": "能解释并在合成场景中判断“标注规则”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 250 验收记录：标注规则；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 251,
+      "module": "09",
+      "topic": "人工样例复核",
+      "goal": "能解释并在合成场景中判断“人工样例复核”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 251 解释记录：人工样例复核；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 252,
+      "module": "09",
+      "topic": "合成数据质量",
+      "goal": "能解释并在合成场景中判断“合成数据质量”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 252 建模记录：合成数据质量；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 253,
+      "module": "09",
+      "topic": "数据版本清单",
+      "goal": "能解释并在合成场景中判断“数据版本清单”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 253 练习记录：数据版本清单；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 254,
+      "module": "09",
+      "topic": "基线测量",
+      "goal": "能解释并在合成场景中判断“基线测量”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 254 实现设计记录：基线测量；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 255,
+      "module": "09",
+      "topic": "SFT目标",
+      "goal": "能解释并在合成场景中判断“SFT目标”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 255 验收记录：SFT目标；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 256,
+      "module": "09",
+      "topic": "全参数微调成本",
+      "goal": "能解释并在合成场景中判断“全参数微调成本”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 256 解释记录：全参数微调成本；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 257,
+      "module": "09",
+      "topic": "LoRA原理直觉",
+      "goal": "能解释并在合成场景中判断“LoRA原理直觉”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 257 建模记录：LoRA原理直觉；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 258,
+      "module": "09",
+      "topic": "LoRA配置含义",
+      "goal": "能解释并在合成场景中判断“LoRA配置含义”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 258 练习记录：LoRA配置含义；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 259,
+      "module": "09",
+      "topic": "量化与QLoRA",
+      "goal": "能解释并在合成场景中判断“量化与QLoRA”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 259 实现设计记录：量化与QLoRA；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 260,
+      "module": "09",
+      "topic": "显存预算",
+      "goal": "能解释并在合成场景中判断“显存预算”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 260 验收记录：显存预算；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 261,
+      "module": "09",
+      "topic": "批量与梯度累积",
+      "goal": "能解释并在合成场景中判断“批量与梯度累积”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 261 解释记录：批量与梯度累积；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 262,
+      "module": "09",
+      "topic": "学习率计划",
+      "goal": "能解释并在合成场景中判断“学习率计划”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 262 建模记录：学习率计划；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 263,
+      "module": "09",
+      "topic": "训练轮数与过拟合",
+      "goal": "能解释并在合成场景中判断“训练轮数与过拟合”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 263 练习记录：训练轮数与过拟合；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 264,
+      "module": "09",
+      "topic": "检查点与恢复",
+      "goal": "能解释并在合成场景中判断“检查点与恢复”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 264 实现设计记录：检查点与恢复；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 265,
+      "module": "09",
+      "topic": "损失曲线阅读",
+      "goal": "能解释并在合成场景中判断“损失曲线阅读”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 265 验收记录：损失曲线阅读；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 266,
+      "module": "09",
+      "topic": "小样本训练方案",
+      "goal": "能解释并在合成场景中判断“小样本训练方案”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 266 解释记录：小样本训练方案；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 267,
+      "module": "09",
+      "topic": "适配器保存与许可",
+      "goal": "能解释并在合成场景中判断“适配器保存与许可”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 267 建模记录：适配器保存与许可；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 268,
+      "module": "09",
+      "topic": "微调前后盲测",
+      "goal": "能解释并在合成场景中判断“微调前后盲测”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 268 练习记录：微调前后盲测；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 269,
+      "module": "09",
+      "topic": "无GPU替代分析",
+      "goal": "能解释并在合成场景中判断“无GPU替代分析”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 269 实现设计记录：无GPU替代分析；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 270,
+      "module": "09",
+      "topic": "微调阶段项目验收",
+      "goal": "能解释并在合成场景中判断“微调阶段项目验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 270 验收记录：微调阶段项目验收；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 271,
+      "module": "10",
+      "topic": "偏好数据与SFT区别",
+      "goal": "能解释并在合成场景中判断“偏好数据与SFT区别”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 271 解释记录：偏好数据与SFT区别；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 272,
+      "module": "10",
+      "topic": "chosen与rejected",
+      "goal": "能解释并在合成场景中判断“chosen与rejected”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 272 建模记录：chosen与rejected；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 273,
+      "module": "10",
+      "topic": "偏好标注一致性",
+      "goal": "能解释并在合成场景中判断“偏好标注一致性”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 273 练习记录：偏好标注一致性；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 274,
+      "module": "10",
+      "topic": "奖励模型直觉",
+      "goal": "能解释并在合成场景中判断“奖励模型直觉”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 274 实现设计记录：奖励模型直觉；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 275,
+      "module": "10",
+      "topic": "DPO目标直觉",
+      "goal": "能解释并在合成场景中判断“DPO目标直觉”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 275 验收记录：DPO目标直觉；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 276,
+      "module": "10",
+      "topic": "PPO流程概览",
+      "goal": "能解释并在合成场景中判断“PPO流程概览”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 276 解释记录：PPO流程概览；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 277,
+      "module": "10",
+      "topic": "GRPO流程概览",
+      "goal": "能解释并在合成场景中判断“GRPO流程概览”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 277 建模记录：GRPO流程概览；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 278,
+      "module": "10",
+      "topic": "奖励投机风险",
+      "goal": "能解释并在合成场景中判断“奖励投机风险”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 278 练习记录：奖励投机风险；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 279,
+      "module": "10",
+      "topic": "偏好评估设计",
+      "goal": "能解释并在合成场景中判断“偏好评估设计”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 279 实现设计记录：偏好评估设计；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 280,
+      "module": "10",
+      "topic": "训练安全边界",
+      "goal": "能解释并在合成场景中判断“训练安全边界”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 280 验收记录：训练安全边界；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 281,
+      "module": "10",
+      "topic": "权重量化是什么",
+      "goal": "能解释并在合成场景中判断“权重量化是什么”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 281 解释记录：权重量化是什么；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 282,
+      "module": "10",
+      "topic": "位宽与质量权衡",
+      "goal": "能解释并在合成场景中判断“位宽与质量权衡”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 282 建模记录：位宽与质量权衡；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 283,
+      "module": "10",
+      "topic": "GGUF与运行格式",
+      "goal": "能解释并在合成场景中判断“GGUF与运行格式”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 283 练习记录：GGUF与运行格式；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 284,
+      "module": "10",
+      "topic": "校准数据意义",
+      "goal": "能解释并在合成场景中判断“校准数据意义”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 284 实现设计记录：校准数据意义；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 285,
+      "module": "10",
+      "topic": "量化前后评测",
+      "goal": "能解释并在合成场景中判断“量化前后评测”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 285 验收记录：量化前后评测；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 286,
+      "module": "10",
+      "topic": "模型合并适用边界",
+      "goal": "能解释并在合成场景中判断“模型合并适用边界”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 286 解释记录：模型合并适用边界；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 287,
+      "module": "10",
+      "topic": "模型许可证兼容",
+      "goal": "能解释并在合成场景中判断“模型许可证兼容”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 287 建模记录：模型许可证兼容；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 288,
+      "module": "10",
+      "topic": "推理显存组成",
+      "goal": "能解释并在合成场景中判断“推理显存组成”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 288 练习记录：推理显存组成；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 289,
+      "module": "10",
+      "topic": "KV缓存作用",
+      "goal": "能解释并在合成场景中判断“KV缓存作用”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 289 实现设计记录：KV缓存作用；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 290,
+      "module": "10",
+      "topic": "上下文与缓存增长",
+      "goal": "能解释并在合成场景中判断“上下文与缓存增长”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 290 验收记录：上下文与缓存增长；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 291,
+      "module": "10",
+      "topic": "预填充与解码",
+      "goal": "能解释并在合成场景中判断“预填充与解码”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 291 解释记录：预填充与解码；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 292,
+      "module": "10",
+      "topic": "首Token延迟",
+      "goal": "能解释并在合成场景中判断“首Token延迟”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 292 建模记录：首Token延迟；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 293,
+      "module": "10",
+      "topic": "吞吐与并发",
+      "goal": "能解释并在合成场景中判断“吞吐与并发”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 293 练习记录：吞吐与并发；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 294,
+      "module": "10",
+      "topic": "批处理取舍",
+      "goal": "能解释并在合成场景中判断“批处理取舍”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 294 实现设计记录：批处理取舍；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 295,
+      "module": "10",
+      "topic": "注意力实现的内存优化",
+      "goal": "能解释并在合成场景中判断“注意力实现的内存优化”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 295 验收记录：注意力实现的内存优化；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 296,
+      "module": "10",
+      "topic": "投机解码概念",
+      "goal": "能解释并在合成场景中判断“投机解码概念”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 296 解释记录：投机解码概念；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 297,
+      "module": "10",
+      "topic": "推理服务队列",
+      "goal": "能解释并在合成场景中判断“推理服务队列”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 297 建模记录：推理服务队列；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 298,
+      "module": "10",
+      "topic": "小大模型路由",
+      "goal": "能解释并在合成场景中判断“小大模型路由”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 298 练习记录：小大模型路由；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 299,
+      "module": "10",
+      "topic": "成本质量延迟报告",
+      "goal": "能解释并在合成场景中判断“成本质量延迟报告”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 299 实现设计记录：成本质量延迟报告；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 300,
+      "module": "10",
+      "topic": "推理选型阶段验收",
+      "goal": "能解释并在合成场景中判断“推理选型阶段验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 300 验收记录：推理选型阶段验收；附一个反例与自查答案",
+      "references": [
+        "F",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 301,
+      "module": "11",
+      "topic": "评估目标与样本集",
+      "goal": "能解释并在合成场景中判断“评估目标与样本集”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 301 解释记录：评估目标与样本集；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 302,
+      "module": "11",
+      "topic": "任务成功率",
+      "goal": "能解释并在合成场景中判断“任务成功率”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 302 建模记录：任务成功率；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 303,
+      "module": "11",
+      "topic": "覆盖与失败分类",
+      "goal": "能解释并在合成场景中判断“覆盖与失败分类”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 303 练习记录：覆盖与失败分类；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 304,
+      "module": "11",
+      "topic": "人工评分规则",
+      "goal": "能解释并在合成场景中判断“人工评分规则”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 304 实现设计记录：人工评分规则；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 305,
+      "module": "11",
+      "topic": "模型裁判校准",
+      "goal": "能解释并在合成场景中判断“模型裁判校准”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 305 验收记录：模型裁判校准；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 306,
+      "module": "11",
+      "topic": "回归门禁设计",
+      "goal": "能解释并在合成场景中判断“回归门禁设计”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 306 解释记录：回归门禁设计；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 307,
+      "module": "11",
+      "topic": "离线在线指标区别",
+      "goal": "能解释并在合成场景中判断“离线在线指标区别”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 307 建模记录：离线在线指标区别；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 308,
+      "module": "11",
+      "topic": "日志指标与追踪",
+      "goal": "能解释并在合成场景中判断“日志指标与追踪”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 308 练习记录：日志指标与追踪；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 309,
+      "module": "11",
+      "topic": "调用关联编号",
+      "goal": "能解释并在合成场景中判断“调用关联编号”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 309 实现设计记录：调用关联编号；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 310,
+      "module": "11",
+      "topic": "敏感信息脱敏",
+      "goal": "能解释并在合成场景中判断“敏感信息脱敏”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 310 验收记录：敏感信息脱敏；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 311,
+      "module": "11",
+      "topic": "错误预算概念",
+      "goal": "能解释并在合成场景中判断“错误预算概念”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 311 解释记录：错误预算概念；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 312,
+      "module": "11",
+      "topic": "超时分层",
+      "goal": "能解释并在合成场景中判断“超时分层”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 312 建模记录：超时分层；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 313,
+      "module": "11",
+      "topic": "只读与写操作重试",
+      "goal": "能解释并在合成场景中判断“只读与写操作重试”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 313 练习记录：只读与写操作重试；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 314,
+      "module": "11",
+      "topic": "退避与抖动",
+      "goal": "能解释并在合成场景中判断“退避与抖动”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 314 实现设计记录：退避与抖动；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 315,
+      "module": "11",
+      "topic": "幂等键范围",
+      "goal": "能解释并在合成场景中判断“幂等键范围”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 315 验收记录：幂等键范围；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 316,
+      "module": "11",
+      "topic": "请求结果不确定",
+      "goal": "能解释并在合成场景中判断“请求结果不确定”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 316 解释记录：请求结果不确定；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 317,
+      "module": "11",
+      "topic": "异步任务状态",
+      "goal": "能解释并在合成场景中判断“异步任务状态”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 317 建模记录：异步任务状态；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 318,
+      "module": "11",
+      "topic": "队列与死信",
+      "goal": "能解释并在合成场景中判断“队列与死信”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 318 练习记录：队列与死信；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 319,
+      "module": "11",
+      "topic": "缓存新鲜度",
+      "goal": "能解释并在合成场景中判断“缓存新鲜度”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 319 实现设计记录：缓存新鲜度；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 320,
+      "module": "11",
+      "topic": "速率限制",
+      "goal": "能解释并在合成场景中判断“速率限制”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 320 验收记录：速率限制；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 321,
+      "module": "11",
+      "topic": "租户与对象授权",
+      "goal": "能解释并在合成场景中判断“租户与对象授权”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 321 解释记录：租户与对象授权；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 322,
+      "module": "11",
+      "topic": "提示注入输入边界",
+      "goal": "能解释并在合成场景中判断“提示注入输入边界”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 322 建模记录：提示注入输入边界；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 323,
+      "module": "11",
+      "topic": "检索资料投毒",
+      "goal": "能解释并在合成场景中判断“检索资料投毒”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 323 练习记录：检索资料投毒；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 324,
+      "module": "11",
+      "topic": "工具输出不可信",
+      "goal": "能解释并在合成场景中判断“工具输出不可信”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 324 实现设计记录：工具输出不可信；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 325,
+      "module": "11",
+      "topic": "审核职责分离",
+      "goal": "能解释并在合成场景中判断“审核职责分离”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 325 验收记录：审核职责分离；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 326,
+      "module": "11",
+      "topic": "持久检查点",
+      "goal": "能解释并在合成场景中判断“持久检查点”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 326 解释记录：持久检查点；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 327,
+      "module": "11",
+      "topic": "数据库备份",
+      "goal": "能解释并在合成场景中判断“数据库备份”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 327 建模记录：数据库备份；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 328,
+      "module": "11",
+      "topic": "恢复演练设计",
+      "goal": "能解释并在合成场景中判断“恢复演练设计”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 328 练习记录：恢复演练设计；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 329,
+      "module": "11",
+      "topic": "依赖漏洞与升级记录",
+      "goal": "能解释并在合成场景中判断“依赖漏洞与升级记录”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 329 实现设计记录：依赖漏洞与升级记录；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 330,
+      "module": "11",
+      "topic": "可靠性阶段验收",
+      "goal": "能解释并在合成场景中判断“可靠性阶段验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 330 验收记录：可靠性阶段验收；附一个反例与自查答案",
+      "references": [
+        "E",
+        "U",
+        "C"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 331,
+      "module": "12",
+      "topic": "多模态输入输出",
+      "goal": "能解释并在合成场景中判断“多模态输入输出”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 331 解释记录：多模态输入输出；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 332,
+      "module": "12",
+      "topic": "图像任务数据契约",
+      "goal": "能解释并在合成场景中判断“图像任务数据契约”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 332 建模记录：图像任务数据契约；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 333,
+      "module": "12",
+      "topic": "图片分辨率与成本",
+      "goal": "能解释并在合成场景中判断“图片分辨率与成本”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 333 练习记录：图片分辨率与成本；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 334,
+      "module": "12",
+      "topic": "OCR与视觉模型比较",
+      "goal": "能解释并在合成场景中判断“OCR与视觉模型比较”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 334 实现设计记录：OCR与视觉模型比较；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 335,
+      "module": "12",
+      "topic": "图表阅读的证据",
+      "goal": "能解释并在合成场景中判断“图表阅读的证据”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 335 验收记录：图表阅读的证据；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 336,
+      "module": "12",
+      "topic": "图片隐私处理",
+      "goal": "能解释并在合成场景中判断“图片隐私处理”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 336 解释记录：图片隐私处理；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 337,
+      "module": "12",
+      "topic": "语音识别错误",
+      "goal": "能解释并在合成场景中判断“语音识别错误”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 337 建模记录：语音识别错误；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 338,
+      "module": "12",
+      "topic": "转录文本与说话人",
+      "goal": "能解释并在合成场景中判断“转录文本与说话人”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 338 练习记录：转录文本与说话人；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 339,
+      "module": "12",
+      "topic": "文本到语音边界",
+      "goal": "能解释并在合成场景中判断“文本到语音边界”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 339 实现设计记录：文本到语音边界；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 340,
+      "module": "12",
+      "topic": "视频采样策略",
+      "goal": "能解释并在合成场景中判断“视频采样策略”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 340 验收记录：视频采样策略；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 341,
+      "module": "12",
+      "topic": "多模态引用定位",
+      "goal": "能解释并在合成场景中判断“多模态引用定位”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 341 解释记录：多模态引用定位；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 342,
+      "module": "12",
+      "topic": "模态间冲突",
+      "goal": "能解释并在合成场景中判断“模态间冲突”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 342 建模记录：模态间冲突；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 343,
+      "module": "12",
+      "topic": "多模态评估集",
+      "goal": "能解释并在合成场景中判断“多模态评估集”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 343 练习记录：多模态评估集；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 344,
+      "module": "12",
+      "topic": "选一个行业场景",
+      "goal": "能解释并在合成场景中判断“选一个行业场景”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 344 实现设计记录：选一个行业场景；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 345,
+      "module": "12",
+      "topic": "访谈目标用户",
+      "goal": "能解释并在合成场景中判断“访谈目标用户”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 345 验收记录：访谈目标用户；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 346,
+      "module": "12",
+      "topic": "明确人工审核点",
+      "goal": "能解释并在合成场景中判断“明确人工审核点”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 346 解释记录：明确人工审核点；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 347,
+      "module": "12",
+      "topic": "最小业务流程",
+      "goal": "能解释并在合成场景中判断“最小业务流程”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 347 建模记录：最小业务流程；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 348,
+      "module": "12",
+      "topic": "组件取舍评审",
+      "goal": "能解释并在合成场景中判断“组件取舍评审”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 348 练习记录：组件取舍评审；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 349,
+      "module": "12",
+      "topic": "数据与工具适配",
+      "goal": "能解释并在合成场景中判断“数据与工具适配”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 349 实现设计记录：数据与工具适配；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 350,
+      "module": "12",
+      "topic": "接口契约冻结",
+      "goal": "能解释并在合成场景中判断“接口契约冻结”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 350 验收记录：接口契约冻结；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 351,
+      "module": "12",
+      "topic": "失败场景演练设计",
+      "goal": "能解释并在合成场景中判断“失败场景演练设计”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 351 解释记录：失败场景演练设计；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 352,
+      "module": "12",
+      "topic": "部署配置准备",
+      "goal": "能解释并在合成场景中判断“部署配置准备”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 352 建模记录：部署配置准备；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 353,
+      "module": "12",
+      "topic": "运维交接说明",
+      "goal": "能解释并在合成场景中判断“运维交接说明”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 353 练习记录：运维交接说明；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 354,
+      "module": "12",
+      "topic": "产品体验检查",
+      "goal": "能解释并在合成场景中判断“产品体验检查”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 354 实现设计记录：产品体验检查；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 355,
+      "module": "12",
+      "topic": "成本容量估算",
+      "goal": "能解释并在合成场景中判断“成本容量估算”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 355 验收记录：成本容量估算；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 356,
+      "module": "12",
+      "topic": "安全许可清单",
+      "goal": "能解释并在合成场景中判断“安全许可清单”",
+      "practice": "写一张概念卡，含自己的定义、业务例子和一个不适用边界",
+      "evidence": "Day 356 解释记录：安全许可清单；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 357,
+      "module": "12",
+      "topic": "结果证据整理",
+      "goal": "能解释并在合成场景中判断“结果证据整理”",
+      "practice": "画输入→处理→输出流程，并注明来源和人工负责位置",
+      "evidence": "Day 357 建模记录：结果证据整理；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 358,
+      "module": "12",
+      "topic": "项目复盘初稿",
+      "goal": "能解释并在合成场景中判断“项目复盘初稿”",
+      "practice": "用三条合成输入手工推演，保留预期输出与一个异常分支",
+      "evidence": "Day 358 练习记录：项目复盘初稿；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 359,
+      "module": "12",
+      "topic": "作品集展示页",
+      "goal": "能解释并在合成场景中判断“作品集展示页”",
+      "practice": "写最小代码或配置片段，逐行解释；不适合编码时用等价伪代码",
+      "evidence": "Day 359 实现设计记录：作品集展示页；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 360,
+      "module": "12",
+      "topic": "综合项目阶段验收",
+      "goal": "能解释并在合成场景中判断“综合项目阶段验收”",
+      "practice": "列正常、缺数据、错误输入三种检查及判定依据",
+      "evidence": "Day 360 验收记录：综合项目阶段验收；附一个反例与自查答案",
+      "references": [
+        "E",
+        "C",
+        "U"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 361,
+      "module": "13",
+      "topic": "最终业务流程走查",
+      "goal": "逐步核对业务输入、工具、审核和输出",
+      "practice": "逐步核对业务输入、工具、审核和输出",
+      "evidence": "Day 361：逐步核对业务输入、工具、审核和输出",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 362,
+      "module": "13",
+      "topic": "最终评估与缺陷列表",
+      "goal": "按冻结样例评分，记录未满足项，不虚构运行结果",
+      "practice": "按冻结样例评分，记录未满足项，不虚构运行结果",
+      "evidence": "Day 362：按冻结样例评分，记录未满足项，不虚构运行结果",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 363,
+      "module": "13",
+      "topic": "最终运行与恢复手册",
+      "goal": "复核依赖、配置、凭据、启动及恢复步骤",
+      "practice": "复核依赖、配置、凭据、启动及恢复步骤",
+      "evidence": "Day 363：复核依赖、配置、凭据、启动及恢复步骤",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 364,
+      "module": "13",
+      "topic": "最终许可与展示发布",
+      "goal": "核对引用、许可、脱敏和展示证据",
+      "practice": "核对引用、许可、脱敏和展示证据",
+      "evidence": "Day 364：核对引用、许可、脱敏和展示证据",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    },
+    {
+      "day": 365,
+      "module": "13",
+      "topic": "毕业复盘与后续路线",
+      "goal": "提交作品、知识地图、自测答案与后续改进清单",
+      "practice": "提交作品、知识地图、自测答案与后续改进清单",
+      "evidence": "Day 365：提交作品、知识地图、自测答案与后续改进清单",
+      "references": [
+        "U",
+        "C",
+        "E"
+      ],
+      "status": "planned"
+    }
+  ]
+}
