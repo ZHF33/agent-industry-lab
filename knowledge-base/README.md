@@ -22,6 +22,7 @@
 | [12：事件身份与告警分组](12-event-identity-and-grouping.md) | 重复投递、冲突事件与Counter计数；附标准库示例 |
 | [13：TLS信任与续期证据](13-tls-trust-and-renewal-evidence.md) | 身份、信任链、握手、部署与观测区别；附离线示例 |
 | [14：备份与恢复目标](14-backup-and-recovery-objectives.md) | RPO/RTO、恢复点、演练与业务验收；附离线元数据示例 |
+| [15：消息队列与确认](15-queues-and-acknowledgements.md) | ready/unacked、两类确认、重投与速率假设；附离线例子 |
 
 ## 学习方向
 
