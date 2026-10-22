@@ -1,0 +1,6 @@
+{
+  "case_id": "QUEUE-CASE-DEMO-01",
+  "queue_id": "QUEUE-DEMO-01",
+  "as_of": "2026-10-22T12:55:00+00:00",
+  "description": "Review backlog growth, ready/unacked balance and worker evidence. Do not connect, purge, retry or scale."
+}

@@ -9,6 +9,7 @@
 | [Bakery Agent source](examples/bakery-agent/README.md) | Dify, n8n, Python API, SQLite | Portable core source + synthetic fixtures; local demo verified |
 | [Agentic-VSDR](docs/existing-agents.md#agentic-vsdr) | Vision-language diagnosis, restoration tools | Existing research simulation; real-model evaluation separate |
 | [Bakery Content Review Skill](examples/bakery-review/README.md) | FastAPI, SQLite, structured evidence, n8n adapter | Local API implementation; see verification report |
+| [Queue Backlog Review](examples/queue-backlog-review/README.md) | LangGraph, n8n, FastAPI | Ready/unacked balance, throughput evidence, human review |
 | [Backup Recovery Review](examples/backup-recovery-review/README.md) | LangGraph, n8n, FastAPI | Recovery point, restore-drill evidence, human review |
 | [Certificate Renewal Review](examples/certificate-renewal-review/README.md) | LangGraph, n8n, FastAPI, datetime | Certificate inventory expiry, deployment evidence, human review |
 | [Alert Noise Review](examples/alert-noise-review/README.md) | LangGraph, n8n, FastAPI, Counter | Duplicate deliveries, conflict evidence, human review |
