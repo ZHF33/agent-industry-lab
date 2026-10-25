@@ -23,6 +23,7 @@
 | [13：TLS信任与续期证据](13-tls-trust-and-renewal-evidence.md) | 身份、信任链、握手、部署与观测区别；附离线示例 |
 | [14：备份与恢复目标](14-backup-and-recovery-objectives.md) | RPO/RTO、恢复点、演练与业务验收；附离线元数据示例 |
 | [15：消息队列与确认](15-queues-and-acknowledgements.md) | ready/unacked、两类确认、重投与速率假设；附离线例子 |
+| [16：缓存与TTL及失效](16-cache-ttl-and-invalidation.md) | TTL、来源版本、失效与回填竞态；附离线比较示例 |
 
 ## 学习方向
 
