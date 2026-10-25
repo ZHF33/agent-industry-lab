@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-OBJECT-01",
+  "object_id": "OBJECT-DEMO-01",
+  "as_of": "2026-10-25T12:00:30+00:00",
+  "description": "A normal object read appears missing. Review version and retention evidence without changing storage."
+}
