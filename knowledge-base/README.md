@@ -25,6 +25,7 @@
 | [15：消息队列与确认](15-queues-and-acknowledgements.md) | ready/unacked、两类确认、重投与速率假设；附离线例子 |
 | [16：缓存与TTL及失效](16-cache-ttl-and-invalidation.md) | TTL、来源版本、失效与回填竞态；附离线比较示例 |
 | [17：对象版本与保留](17-object-versions-and-retention.md) | 桶、键、版本身份、删除标记与保留证据；附离线选择实验 |
+| [18：全文检索与倒排索引](18-fulltext-and-inverted-index.md) | 词项、倒排表、范围过滤、排序与证据支持；附离线检索示例 |
 
 ## 学习方向
 

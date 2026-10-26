@@ -32,7 +32,7 @@
 
 **零基础中文教学 · 365个学习单元 · 从认识模型到交付行业应用。**
 
-[课程发布页](llm-zero-to-one/README.md) · [365天完整计划](llm-zero-to-one/PLAN-365.md) · [第一期：大模型到底是什么？](llm-zero-to-one/lessons/day-001.md) · [第二期：模型与聊天产品](llm-zero-to-one/lessons/day-002.md) · [第三期：训练与使用](llm-zero-to-one/lessons/day-003.md) · [第四期：参数与资料库](llm-zero-to-one/lessons/day-004.md) · [第五期：Token是什么](llm-zero-to-one/lessons/day-005.md) · [第六期：上下文与预算](llm-zero-to-one/lessons/day-006.md) · [参考课程拆解](llm-zero-to-one/SOURCES.md)
+[课程发布页](llm-zero-to-one/README.md) · [365天完整计划](llm-zero-to-one/PLAN-365.md) · [第一期：大模型到底是什么？](llm-zero-to-one/lessons/day-001.md) · [第二期：模型与聊天产品](llm-zero-to-one/lessons/day-002.md) · [第三期：训练与使用](llm-zero-to-one/lessons/day-003.md) · [第四期：参数与资料库](llm-zero-to-one/lessons/day-004.md) · [第五期：Token是什么](llm-zero-to-one/lessons/day-005.md) · [第六期：上下文与预算](llm-zero-to-one/lessons/day-006.md) · [第七期：生成与查证](llm-zero-to-one/lessons/day-007.md) · [参考课程拆解](llm-zero-to-one/SOURCES.md)
 
 从Python与接口基础进入RAG、Agent、微调、推理优化和可靠性；每天配讲解、练习与交付要求。参考Datawhale与Maxime Labonne开源课程，独立编排原创案例。计划与已发布正文分别列出。
 
@@ -42,7 +42,7 @@
 
 项目基建评估使用[选型清单](docs/infrastructure-checklist.md)，覆盖模型、数据、检索、队列、工具、部署、观测、安全与恢复；按需采用。
 
-最新基建课：[对象版本与保留](knowledge-base/17-object-versions-and-retention.md)。
+最新基建课：[全文检索与倒排索引](knowledge-base/18-fulltext-and-inverted-index.md)。
 
 ## Run the first Skill
 
