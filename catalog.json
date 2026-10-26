@@ -248,6 +248,22 @@
       "model_verified": false,
       "n8n_verified": false,
       "dify_verified": false
+    },
+    {
+      "id": "support-knowledge-review",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/support-knowledge-review/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama",
+        "Lexical retrieval"
+      ],
+      "model_verified": false,
+      "n8n_verified": false,
+      "dify_verified": false
     }
   ]
 }
