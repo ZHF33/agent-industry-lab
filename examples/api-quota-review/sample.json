@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-QUOTA-01",
+  "service_id": "SERVICE-DEMO-01",
+  "as_of": "2026-10-27T12:00:02.500000+00:00",
+  "description": "Review a proposed eleven-request atomic batch against observed token budget. Do not send or retry requests."
+}
