@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-APPROVAL-01",
+  "request_id": "REQUEST-DEMO-01",
+  "as_of": "2026-10-30T12:00:30+00:00",
+  "description": "Review an old approval before a proposed dataset read-access grant; do not grant access."
+}
