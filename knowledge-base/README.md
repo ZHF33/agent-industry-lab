@@ -28,6 +28,7 @@
 | [18：全文检索与倒排索引](18-fulltext-and-inverted-index.md) | 词项、倒排表、范围过滤、排序与证据支持；附离线检索示例 |
 | [19：限流与令牌桶](19-rate-limits-and-token-buckets.md) | 速率、突发容量、理想等待与共享状态；附离线预算实验 |
 | [20：乐观并发与修订版本](20-optimistic-concurrency-and-revisions.md) | 丢失更新、CAS、原子版本条件与审批边界；附顺序内存示例 |
+| [21：审批有效期与单次消费](21-approval-lifetime-and-consumption.md) | 批准绑定、到期边界、撤销、重放与原子消费；附离线判定示例 |
 
 ## 学习方向
 
