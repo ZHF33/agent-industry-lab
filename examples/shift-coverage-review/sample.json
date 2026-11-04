@@ -1,0 +1,6 @@
+{
+  "case_id": "SHIFT-CASE-01",
+  "shift_id": "SHIFT-DEMO-A",
+  "as_of": "2026-11-04T13:00:30+00:00",
+  "description": "核对合成交班窗口的证据覆盖与缺口。"
+}
