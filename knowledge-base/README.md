@@ -29,6 +29,10 @@
 | [19：限流与令牌桶](19-rate-limits-and-token-buckets.md) | 速率、突发容量、理想等待与共享状态；附离线预算实验 |
 | [20：乐观并发与修订版本](20-optimistic-concurrency-and-revisions.md) | 丢失更新、CAS、原子版本条件与审批边界；附顺序内存示例 |
 | [21：审批有效期与单次消费](21-approval-lifetime-and-consumption.md) | 批准绑定、到期边界、撤销、重放与原子消费；附离线判定示例 |
+| [22：单位与测量契约](22-units-and-measurement-contracts.md) | 温标、温差与单位校验。附离线示例 |
+| [23：路径与附件边界](23-paths-and-upload-boundaries.md) | 路径规范化与上传边界。附离线示例 |
+| [24：有向追溯与有限遍历](24-directed-lineage-and-bounded-traversal.md) | 证据路径与搜索截断。附离线示例 |
+| [25：半开区间与覆盖](25-half-open-intervals-and-coverage.md) | 时间对齐、并集与缺口。附离线示例 |
 
 ## 学习方向
 
