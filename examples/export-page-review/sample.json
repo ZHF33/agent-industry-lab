@@ -1,0 +1,6 @@
+{
+  "case_id": "EXPORT-CASE-01",
+  "export_id": "EXPORT-DEMO-A",
+  "as_of": "2026-11-05T12:00:30Z",
+  "description": "合成生产订单导出只收到了部分页，请核对完整性与重复记录。"
+}
