@@ -1,0 +1,6 @@
+{
+  "case_id": "DEPENDENCY-CASE-01",
+  "plan_id": "PLAN-DEMO-A",
+  "as_of": "2026-11-06T12:00:30Z",
+  "description": "核对合成生产计划的依赖与当前阻塞，输出人工审查建议。"
+}
