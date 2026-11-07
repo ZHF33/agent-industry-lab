@@ -33,6 +33,8 @@
 | [23：路径与附件边界](23-paths-and-upload-boundaries.md) | 路径规范化与上传边界。附离线示例 |
 | [24：有向追溯与有限遍历](24-directed-lineage-and-bounded-traversal.md) | 证据路径与搜索截断。附离线示例 |
 | [25：半开区间与覆盖](25-half-open-intervals-and-coverage.md) | 时间对齐、并集与缺口。附离线示例 |
+| [26：分页与终止证据](26-pagination-and-termination-evidence.md) | 游标链、去重、快照与完整性。附离线示例 |
+| [27：前置依赖与拓扑排序](27-prerequisites-and-topological-order.md) | 任务顺序、循环与当前阻塞。附离线示例 |
 
 ## 学习方向
 
