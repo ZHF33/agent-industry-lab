@@ -1,0 +1,6 @@
+{
+  "case_id": "INSPECTION-CASE-01",
+  "checklist_id": "CHECK-DEMO-A",
+  "as_of": "2026-11-07T12:00:30Z",
+  "description": "核对合成设备点检计划与已收记录，列出待复核异常。"
+}
