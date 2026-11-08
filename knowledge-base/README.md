@@ -35,6 +35,7 @@
 | [25：半开区间与覆盖](25-half-open-intervals-and-coverage.md) | 时间对齐、并集与缺口。附离线示例 |
 | [26：分页与终止证据](26-pagination-and-termination-evidence.md) | 游标链、去重、快照与完整性。附离线示例 |
 | [27：前置依赖与拓扑排序](27-prerequisites-and-topological-order.md) | 任务顺序、循环与当前阻塞。附离线示例 |
+| [28：对账与反连接](28-reconciliation-and-anti-joins.md) | 组合键、缺项、计划外记录和冲突证据。附离线示例 |
 
 ## 学习方向
 
