@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-SPARE-01",
+  "request_id": "REQ-DEMO-A",
+  "as_of": "2026-11-08T12:00:30Z",
+  "description": "核查申请与净领用数量，按流水编号人工复核差异"
+}
