@@ -434,6 +434,21 @@
       "model_verified": false,
       "n8n_verified": false,
       "dify_verified": false
+    },
+    {
+      "id": "dispatch-shelf-life-review",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/dispatch-shelf-life-review/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama"
+      ],
+      "model_verified": false,
+      "n8n_verified": false,
+      "dify_verified": false
     }
   ]
 }

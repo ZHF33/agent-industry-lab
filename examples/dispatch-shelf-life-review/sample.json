@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-LIFE-01",
+  "shipment_id": "SHIP-DEMO-A",
+  "as_of": "2026-11-09T14:00:00Z",
+  "description": "复核计划到货时的批次剩余效期"
+}
