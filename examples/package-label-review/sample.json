@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-LABEL-01",
+  "job_id": "JOB-DEMO-A",
+  "as_of": "2026-11-10T14:00:30Z",
+  "description": "复核包装标签扫描值与工单的对应关系"
+}
