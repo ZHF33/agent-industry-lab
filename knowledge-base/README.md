@@ -36,6 +36,9 @@
 | [26：分页与终止证据](26-pagination-and-termination-evidence.md) | 游标链、去重、快照与完整性。附离线示例 |
 | [27：前置依赖与拓扑排序](27-prerequisites-and-topological-order.md) | 任务顺序、循环与当前阻塞。附离线示例 |
 | [28：对账与反连接](28-reconciliation-and-anti-joins.md) | 组合键、缺项、计划外记录和冲突证据。附离线示例 |
+| [29：进出数量与守恒核算](29-quantity-balances-and-conservation.md) | 逐备件核算净领用和差异。附离线示例 |
+| [30：到货时点与剩余效期](30-arrival-deadlines-and-remaining-life.md) | 时间偏移与剩余秒数阈值。附离线示例 |
+| [31：校验位与标签身份](31-check-digits-and-identity.md) | 加权余数与工单身份核对。附离线示例 |
 
 ## 学习方向
 
