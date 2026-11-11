@@ -39,6 +39,7 @@
 | [29：进出数量与守恒核算](29-quantity-balances-and-conservation.md) | 逐备件核算净领用和差异。附离线示例 |
 | [30：到货时点与剩余效期](30-arrival-deadlines-and-remaining-life.md) | 时间偏移与剩余秒数阈值。附离线示例 |
 | [31：校验位与标签身份](31-check-digits-and-identity.md) | 加权余数与工单身份核对。附离线示例 |
+| [32：多字段排序与并列处理](32-deterministic-priority-and-tie-breaks.md) | 严重度、承诺时间、并列规则与缺证处理。附离线示例 |
 
 ## 学习方向
 
