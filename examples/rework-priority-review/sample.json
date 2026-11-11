@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-REWORK-01",
+  "line_id": "LINE-DEMO-A",
+  "as_of": "2026-11-11T15:30:00Z",
+  "description": "检查待返工单顺序、已逾期工单及缺失证据"
+}
