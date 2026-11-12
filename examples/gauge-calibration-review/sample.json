@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-GAUGE-01",
+  "gauge_id": "GAUGE-DEMO-A",
+  "as_of": "2026-11-12T13:30:00Z",
+  "description": "复核量具各测点误差、不确定度区间及缺失记录"
+}
