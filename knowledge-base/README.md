@@ -43,6 +43,7 @@
 | [33：测量区间与判定规则](33-measurement-intervals-and-decision-rules.md) | 测量误差区间、容差边界与缺测点。附离线示例 |
 | [34：最新事件与等时冲突](34-latest-events-and-equal-time-conflicts.md) | 迟到事件、同一时刻的冲突与人工复核。附离线示例 |
 | [35：累计计数器与重置证据](35-cumulative-counters-and-resets.md) | 计数连续性、复位证据与寿命上限。附离线示例 |
+| [36：汇总比率与分母覆盖](36-pooled-ratios-and-denominator-coverage.md) | 加权汇总、缺报与零分母。附离线示例 |
 
 ## 学习方向
 
