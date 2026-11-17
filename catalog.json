@@ -554,6 +554,21 @@
       "model_verified": false,
       "n8n_verified": false,
       "dify_verified": false
+    },
+    {
+      "id": "dock-capacity-review",
+      "kind": "agent",
+      "status": "source-released",
+      "page": "examples/dock-capacity-review/README.md",
+      "stack": [
+        "LangGraph",
+        "n8n",
+        "FastAPI",
+        "Ollama"
+      ],
+      "model_verified": false,
+      "n8n_verified": false,
+      "dify_verified": false
     }
   ]
 }

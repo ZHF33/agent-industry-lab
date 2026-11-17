@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-DOCK-01",
+  "pool_id": "POOL-DEMO-A",
+  "as_of": "2026-11-17T13:15:00Z",
+  "description": "复核次日卸货预约，同一时段是否超过可用月台"
+}
