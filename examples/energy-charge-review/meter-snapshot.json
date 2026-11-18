@@ -1,0 +1,9 @@
+{
+  "source": "energy-meter-demo-01",
+  "meter_id": "METER-DEMO-A",
+  "issued_at": "2026-11-18T13:00:00Z",
+  "wh_by_slot": {
+    "peak": 1250,
+    "off_peak": 1250
+  }
+}

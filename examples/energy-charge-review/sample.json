@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-ENERGY-01",
+  "meter_id": "METER-DEMO-A",
+  "as_of": "2026-11-18T13:15:00Z",
+  "description": "复核合成电表分档电量和电量费用"
+}
