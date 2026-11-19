@@ -9,6 +9,7 @@
 | [Bakery Agent source](examples/bakery-agent/README.md) | Dify, n8n, Python API, SQLite | Portable core source + synthetic fixtures; local demo verified |
 | [Agentic-VSDR](docs/existing-agents.md#agentic-vsdr) | Vision-language diagnosis, restoration tools | Existing research simulation; real-model evaluation separate |
 | [Bakery Content Review Skill](examples/bakery-review/README.md) | FastAPI, SQLite, structured evidence, n8n adapter | Local API implementation; see verification report |
+| [Material Kitting Review](examples/material-kitting-review/README.md) | LangGraph, n8n, FastAPI | Review complete assembly units, material bottlenecks and shortages |
 | [Energy Charge Review](examples/energy-charge-review/README.md) | LangGraph, n8n, FastAPI | Review synthetic metered usage charges by tariff slot |
 | [Dock Capacity Review](examples/dock-capacity-review/README.md) | LangGraph, n8n, FastAPI | Detect concurrent dock booking shortages and list their booking IDs |
 | [Pallet Capacity Review](examples/pallet-capacity-review/README.md) | LangGraph, n8n, FastAPI | Estimate pallet demand by dispatch group and flag missing capacity |
