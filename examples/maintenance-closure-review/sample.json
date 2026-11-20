@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-CLOSURE-01",
+  "order_id": "MAINT-DEMO-A",
+  "as_of": "2026-11-20T13:15:00Z",
+  "description": "核查维修工单结案资料，列出失败项和缺证项"
+}
