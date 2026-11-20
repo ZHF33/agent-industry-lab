@@ -44,6 +44,11 @@
 | [34：最新事件与等时冲突](34-latest-events-and-equal-time-conflicts.md) | 迟到事件、同一时刻的冲突与人工复核。附离线示例 |
 | [35：累计计数器与重置证据](35-cumulative-counters-and-resets.md) | 计数连续性、复位证据与寿命上限。附离线示例 |
 | [36：汇总比率与分母覆盖](36-pooled-ratios-and-denominator-coverage.md) | 加权汇总、缺报与零分母。附离线示例 |
+| [37：整数容量与分组取整](37-integer-capacity-and-grouping.md) | 整托、尾箱与分组约束。附离线示例 |
+| [38：事件扫描与并发容量](38-event-sweep-and-capacity.md) | 事件端点、占用峰值与容量缺口。附离线示例 |
+| [39：JSON 重名键与证据保全](39-duplicate-json-keys.md) | 重名解析、证据丢失与入口校验。附离线示例 |
+| [40：齐套约束与限制物料](40-bottlenecks-and-complete-kits.md) | 完整件数、限制物料与未知库存。附离线示例 |
+| [41：已知失败与缺证状态](41-failed-and-missing-evidence.md) | 失败、缺证与必需项聚合。附离线示例 |
 
 ## 学习方向
 
