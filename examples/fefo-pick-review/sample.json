@@ -1,0 +1,6 @@
+{
+  "case_id": "CASE-PICK-01",
+  "request_id": "PICK-DEMO-A",
+  "as_of": "2026-11-21T13:15:00Z",
+  "description": "按先到期先出给出合成拣选建议并标注缺口"
+}

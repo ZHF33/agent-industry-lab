@@ -1,0 +1,32 @@
+{
+  "source": "pick-stock-demo-01",
+  "request_id": "PICK-DEMO-A",
+  "issued_at": "2026-11-21T13:00:00Z",
+  "sku": "PART-DEMO-1",
+  "lots": [
+    {
+      "lot_id": "B",
+      "available": 5,
+      "expires_at": "2026-11-25T00:00:00Z",
+      "released": true
+    },
+    {
+      "lot_id": "A",
+      "available": 3,
+      "expires_at": "2026-11-24T00:00:00Z",
+      "released": true
+    },
+    {
+      "lot_id": "C",
+      "available": 2,
+      "expires_at": "2026-11-22T00:00:00Z",
+      "released": true
+    },
+    {
+      "lot_id": "D",
+      "available": 7,
+      "expires_at": "2026-11-26T00:00:00Z",
+      "released": false
+    }
+  ]
+}
