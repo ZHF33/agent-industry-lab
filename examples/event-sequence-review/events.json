@@ -1,0 +1,31 @@
+{
+  "source": "event-snapshot-demo-01",
+  "stream_id": "STREAM-DEMO-A",
+  "issued_at": "2026-11-22T13:00:00Z",
+  "events": [
+    {
+      "sequence": 100,
+      "state": "started"
+    },
+    {
+      "sequence": 102,
+      "state": "paused"
+    },
+    {
+      "sequence": 102,
+      "state": "paused"
+    },
+    {
+      "sequence": 103,
+      "state": "running"
+    },
+    {
+      "sequence": 103,
+      "state": "stopped"
+    },
+    {
+      "sequence": 105,
+      "state": "finished"
+    }
+  ]
+}
