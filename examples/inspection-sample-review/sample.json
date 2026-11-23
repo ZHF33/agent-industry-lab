@@ -1,0 +1,6 @@
+{
+  "case_id": "SAMPLING-DEMO-01",
+  "batch_id": "BATCH-DEMO-A",
+  "as_of": "2026-11-23T13:00:00Z",
+  "description": "按批准的分层配额提出抽检清单，说明缺额，交质量员审核。"
+}

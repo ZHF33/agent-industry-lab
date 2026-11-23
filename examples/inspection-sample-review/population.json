@@ -1,0 +1,23 @@
+{
+  "source": "population-demo-01",
+  "batch_id": "BATCH-DEMO-A",
+  "issued_at": "2026-11-23T12:30:00Z",
+  "units": [
+    {
+      "unit_id": "UNIT-03",
+      "stratum": "A"
+    },
+    {
+      "unit_id": "UNIT-01",
+      "stratum": "A"
+    },
+    {
+      "unit_id": "UNIT-04",
+      "stratum": "B"
+    },
+    {
+      "unit_id": "UNIT-02",
+      "stratum": "A"
+    }
+  ]
+}
