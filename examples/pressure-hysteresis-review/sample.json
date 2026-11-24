@@ -1,0 +1,6 @@
+{
+  "case_id": "PRESSURE-DEMO-01",
+  "system_id": "AIR-DEMO-A",
+  "as_of": "2026-11-24T12:33:25Z",
+  "description": "复盘低压触发、恢复及缺测导致的未知状态，交设备工程师审核。"
+}

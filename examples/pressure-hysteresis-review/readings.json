@@ -1,0 +1,40 @@
+{
+  "source": "pressure-readings-demo-01",
+  "system_id": "AIR-DEMO-A",
+  "unit": "kPa",
+  "issued_at": "2026-11-24T12:33:22Z",
+  "readings": [
+    {
+      "at": "2026-11-24T12:31:00Z",
+      "pressure_kpa": 640
+    },
+    {
+      "at": "2026-11-24T12:31:10Z",
+      "pressure_kpa": 599
+    },
+    {
+      "at": "2026-11-24T12:31:20Z",
+      "pressure_kpa": 610
+    },
+    {
+      "at": "2026-11-24T12:31:30Z",
+      "pressure_kpa": 649
+    },
+    {
+      "at": "2026-11-24T12:31:40Z",
+      "pressure_kpa": 650
+    },
+    {
+      "at": "2026-11-24T12:33:00Z",
+      "pressure_kpa": 625
+    },
+    {
+      "at": "2026-11-24T12:33:10Z",
+      "pressure_kpa": 590
+    },
+    {
+      "at": "2026-11-24T12:33:20Z",
+      "pressure_kpa": 660
+    }
+  ]
+}
