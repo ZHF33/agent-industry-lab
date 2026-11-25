@@ -1,0 +1,30 @@
+{
+  "source": "operators-demo-01",
+  "plan_id": "PLAN-DEMO-A",
+  "issued_at": "2026-11-25T12:30:00Z",
+  "declared_complete": true,
+  "operators": [
+    {
+      "operator_id": "OP-A",
+      "approved_skills": [
+        "PACK",
+        "LABEL"
+      ],
+      "available": true
+    },
+    {
+      "operator_id": "OP-B",
+      "approved_skills": [
+        "PACK"
+      ],
+      "available": true
+    },
+    {
+      "operator_id": "OP-C",
+      "approved_skills": [
+        "SCAN"
+      ],
+      "available": false
+    }
+  ]
+}

@@ -9,6 +9,7 @@
 | [Bakery Agent source](examples/bakery-agent/README.md) | Dify, n8n, Python API, SQLite | Portable core source + synthetic fixtures; local demo verified |
 | [Agentic-VSDR](docs/existing-agents.md#agentic-vsdr) | Vision-language diagnosis, restoration tools | Existing research simulation; real-model evaluation separate |
 | [Bakery Content Review Skill](examples/bakery-review/README.md) | FastAPI, SQLite, structured evidence, n8n adapter | Local API implementation; see verification report |
+| [Operator Qualification Review](examples/operator-qualification-review/README.md) | LangGraph, n8n, FastAPI | Maximum-count one-to-one job/operator eligibility proposals and unmatched jobs |
 | [Pressure Hysteresis Review](examples/pressure-hysteresis-review/README.md) | LangGraph, n8n, FastAPI | Pressure state replay with separate trigger/recovery thresholds and sampling-gap resets |
 | [Inspection Sample Review](examples/inspection-sample-review/README.md) | LangGraph, n8n, FastAPI | Reproducible per-stratum inspection lists and quota shortages |
 | [Event Sequence Review](examples/event-sequence-review/README.md) | LangGraph, n8n, FastAPI | Review declared sequence coverage, repeats and conflicting payloads |
