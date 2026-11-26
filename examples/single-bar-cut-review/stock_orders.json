@@ -1,0 +1,23 @@
+{
+  "source": "stock-orders-demo-01",
+  "stock_id": "BAR-DEMO-A",
+  "material_id": "MAT-DEMO",
+  "unit": "mm",
+  "length_mm": 1000,
+  "issued_at": "2026-11-26T12:30:00Z",
+  "declared_complete": true,
+  "requests": [
+    {
+      "piece_id": "P-01",
+      "length_mm": 600
+    },
+    {
+      "piece_id": "P-02",
+      "length_mm": 450
+    },
+    {
+      "piece_id": "P-03",
+      "length_mm": 450
+    }
+  ]
+}
