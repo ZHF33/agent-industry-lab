@@ -9,6 +9,7 @@
 | [Bakery Agent source](examples/bakery-agent/README.md) | Dify, n8n, Python API, SQLite | Portable core source + synthetic fixtures; local demo verified |
 | [Agentic-VSDR](docs/existing-agents.md#agentic-vsdr) | Vision-language diagnosis, restoration tools | Existing research simulation; real-model evaluation separate |
 | [Bakery Content Review Skill](examples/bakery-review/README.md) | FastAPI, SQLite, structured evidence, n8n adapter | Local API implementation; see verification report |
+| [Warehouse Route Review](examples/warehouse-route-review/README.md) | LangGraph, n8n, FastAPI | Directed minimum-distance warehouse routes excluding closed aisles |
 | [Single Bar Cut Review](examples/single-bar-cut-review/README.md) | LangGraph, n8n, FastAPI | Bounded single-bar cut selection with kerf, objective ties and remaining stock |
 | [Operator Qualification Review](examples/operator-qualification-review/README.md) | LangGraph, n8n, FastAPI | Maximum-count one-to-one job/operator eligibility proposals and unmatched jobs |
 | [Pressure Hysteresis Review](examples/pressure-hysteresis-review/README.md) | LangGraph, n8n, FastAPI | Pressure state replay with separate trigger/recovery thresholds and sampling-gap resets |

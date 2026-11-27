@@ -1,0 +1,39 @@
+{
+  "source": "warehouse-map-demo-01",
+  "map_id": "MAP-DEMO-A",
+  "unit": "m",
+  "issued_at": "2026-11-27T12:30:00Z",
+  "declared_complete": true,
+  "nodes": [
+    "ENTRY",
+    "A",
+    "B",
+    "EXIT"
+  ],
+  "edges": [
+    {
+      "from": "ENTRY",
+      "to": "A",
+      "distance_m": 2,
+      "open": true
+    },
+    {
+      "from": "A",
+      "to": "EXIT",
+      "distance_m": 2,
+      "open": false
+    },
+    {
+      "from": "ENTRY",
+      "to": "B",
+      "distance_m": 5,
+      "open": true
+    },
+    {
+      "from": "B",
+      "to": "EXIT",
+      "distance_m": 2,
+      "open": true
+    }
+  ]
+}

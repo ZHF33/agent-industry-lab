@@ -1,0 +1,6 @@
+{
+  "case_id": "ROUTE-DEMO-01",
+  "map_id": "MAP-DEMO-A",
+  "as_of": "2026-11-27T12:30:30Z",
+  "description": "排除关闭通道，复核固定起终点间最短距离与不可达状态，交仓管员审核。"
+}
